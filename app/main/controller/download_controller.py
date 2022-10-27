@@ -1,10 +1,11 @@
 import os
-from flask_restx import Resource
-from werkzeug.datastructures import FileStorage
-from service.constan_service import ConstantService
-from ..util.dto import DownloadDto
-from flask import request, send_file, abort
 
+from flask import request, send_file, abort
+from flask_restx import Resource
+from service.constan_service import ConstantService
+from werkzeug.datastructures import FileStorage
+
+from ..util.dto import DownloadDto
 
 api = DownloadDto.api
 upload_parser = api.parser()

@@ -1,5 +1,6 @@
-from ..database import connector
 from datetime import datetime
+
+from ..database import connector
 
 
 class person_orm(object):

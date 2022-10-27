@@ -1,4 +1,5 @@
 import pymysql
+
 from ..database import config
 
 CREDENTIALS = {

@@ -1,17 +1,19 @@
 import logging
 import os
-import traceback
 import time
+import traceback
 from datetime import datetime
+
 from flask import jsonify
+from flask import request
 from flask_restx import Resource
-from werkzeug.datastructures import FileStorage
 from service.constan_service import ConstantService
+from werkzeug.datastructures import FileStorage
+
 from ..service.employee_service import personservice
+from ..service.mailer_service import MailUtilities
 from ..util.dto import EmployeeDto
 from ..util.utilities import Utilities
-from flask import request, send_file, abort
-from ..service.mailer_service import MailUtilities
 
 api = EmployeeDto.api
 upload_parser = api.parser()
@@ -166,20 +168,34 @@ class employeeFile(Resource):
         else:
             return res
         try:
+            now = datetime.now()
+            dt_start = now.strftime("%d/%m/%Y %H:%M:%S")
             start_time = time.time()
             status = personservice.insert_file(file_path)
             end_time = time.time()
+            insertfile = file.filename
+            if email_id is not None:
+                mail_status = MailUtilities.send_success_noti(email_id,  dt_start, insertfile)
+                if mail_status is True:
+                    return {
+                        "status": True,
+                        "result": status,
+                        "message": "Congratulations! Your file data successfully inserted.",
+                        "Processing Time": '{:.3f} sec'.format(end_time - start_time),
+                        "mail_sent": email_id,
+                        "file": file.filename
+                    }
+
             return {
                 "status": True,
                 "result": status,
                 "message": "Congratulations! Your file data successfully inserted.",
                 "Processing Time": '{:.3f} sec'.format(end_time - start_time),
+                "mail_sent": email_id,
                 "file": file.filename
             }
         except Exception as e:
             print(str(e))
-        # if email_id is not None:
-        #     MailUtilities.send_failed_notification(email_id, str(e), dt_start)
 
 
 @api.route('/insert_employee')

@@ -1,9 +1,10 @@
 import datetime
+import re
 import smtplib
+import time
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
-import time
-import re
+
 from .constan_service import ConstantService
 
 
@@ -194,3 +195,51 @@ class MailUtilities(object):
             return True
         else:
             return False
+
+    @staticmethod
+    def send_success_noti(emails, dt_start, insertfile):
+        raw_body = '''
+            <body style="font-family:arial;">
+                          Dear <span>friends</span>,<br><br>
+
+                        <table style="text-align:left;width:100%;font-family:arial">
+                             <tr>
+                                <td style="padding-bottom:10px;">{head_message}</td>
+                             </tr>
+            				 <tr>
+                                <td style="padding-bottom:10px;">Status: {status}</td>
+                             </tr>
+                             <tr>
+                                <td style="padding-bottom:10px;">inserted_file: {insertfile}</td>
+                             </tr>
+            				<tr>
+                            <td>Start Date/Time : {dt}</td>
+                         </tr>
+                         <tr>
+                            <td>End Date/Time : {dtt}</td>
+                         </tr>
+
+                        </table>
+                            <br><br><br><br><br><br><br>
+            				Regards,
+                            <br><span style="color:#0073A5"> Employee Ms</span>
+                            <br><span style="color:#0073A5">(Employee Ms-Platform)</span>
+                    </html>
+            '''
+        now = datetime.datetime.now()
+        dt_string = now.strftime("%d/%m/%Y %H:%M:%S")
+
+        # head_message = "Xignite {type} process has been started."
+        head_message = "Execution successfully Completed"
+
+        status = "Completed"
+
+        to = emails
+        cc = ConstantService.cc_mail_id()
+        subject = " Employee Ms Notification - Success"
+
+        head_message.format(type="Quarterly")
+        body = raw_body.format(head_message=head_message, status=status, insertfile=insertfile,
+                               dt=dt_start, dtt=dt_string)
+
+        MailUtilities.sendHtmlMail(to, cc, subject, body)

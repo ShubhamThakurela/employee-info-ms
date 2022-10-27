@@ -1,8 +1,8 @@
-from flask_restx import Api
 from flask import Blueprint
-from .main.controller.employee_controller import api as employee
-from .main.controller.download_controller import api as download
+from flask_restx import Api
 
+from .main.controller.download_controller import api as download
+from .main.controller.employee_controller import api as employee
 
 blueprint = Blueprint('api', __name__)
 api = Api(blueprint,

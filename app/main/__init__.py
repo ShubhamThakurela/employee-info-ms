@@ -1,7 +1,9 @@
-from flask import Flask
 import os
-from flask_sqlalchemy import SQLAlchemy
+
+from flask import Flask
 from flask_bcrypt import Bcrypt
+from flask_sqlalchemy import SQLAlchemy
+
 # from .config.config import config_by_name
 
 db = SQLAlchemy()
