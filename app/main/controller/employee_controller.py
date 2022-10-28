@@ -1,5 +1,6 @@
 import logging
 import os
+import shutil
 import time
 import traceback
 from datetime import datetime
@@ -87,13 +88,15 @@ class download_employee_data(Resource):
             end_time = time.time()
             if email_id is not None:
                 mail_status = MailUtilities.send_success_notification(email_id, download_link, dt_start)
-                if mail_status is True:
+                if mail_status == "Email has been sent":
                     return {
                         "status": True,
                         "Message": "Your Employees data crawler Successfully Fetched",
                         "Processed_Time": '{:.3f} sec'.format(end_time - start_time),
                         "download_link": "http://" + ConstantService.server_host() + "/Download/download_data_file?output_file_name=" + data_file,
-                        "Mail_sent": email_id
+                        "Mail_sent": email_id,
+                        "mail_status": mail_status
+
                     }
             return {
                 "status": True,
@@ -102,7 +105,6 @@ class download_employee_data(Resource):
                 "download_link": "http://" + ConstantService.server_host() + "/Download/download_data_file?output_file_name=" + data_file,
                 "Mail_sent": email_id
             }
-
         except Exception as e:
             print(str(e))
             if email_id is not None:
@@ -172,17 +174,23 @@ class employeeFile(Resource):
             dt_start = now.strftime("%d/%m/%Y %H:%M:%S")
             start_time = time.time()
             status = personservice.insert_file(file_path)
+            # Move file to processed after completed the process
+            if not os.path.exists(os.path.dirname(ConstantService.data_processed_path())):
+                os.makedirs(os.path.dirname(ConstantService.data_processed_path()))
+            shutil.move(file_path, os.path.join(ConstantService.data_processed_path(), os.path.basename(file_path)))
+
             end_time = time.time()
             insertfile = file.filename
             if email_id is not None:
                 mail_status = MailUtilities.send_success_noti(email_id,  dt_start, insertfile)
-                if mail_status is True:
+                if mail_status == "Email has been sent":
                     return {
                         "status": True,
                         "result": status,
                         "message": "Congratulations! Your file data successfully inserted.",
                         "Processing Time": '{:.3f} sec'.format(end_time - start_time),
                         "mail_sent": email_id,
+                        "mail_status": mail_status,
                         "file": file.filename
                     }
 

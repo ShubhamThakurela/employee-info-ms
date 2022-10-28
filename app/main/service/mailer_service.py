@@ -55,7 +55,10 @@ class MailUtilities(object):
         body = raw_body.format(head_message=head_message, status=status, download_link=download_link,
                                dt=start_dt, dtt=dt_string)
 
-        MailUtilities.sendHtmlMail(to, cc, subject, body)
+        sent_mail = MailUtilities.sendHtmlMail(to, cc, subject, body)
+        if sent_mail is True:
+
+            return "Email has been sent"
 
     @staticmethod
     def send_failed_notification(emails, error_log, start_dt):
@@ -242,4 +245,7 @@ class MailUtilities(object):
         body = raw_body.format(head_message=head_message, status=status, insertfile=insertfile,
                                dt=dt_start, dtt=dt_string)
 
-        MailUtilities.sendHtmlMail(to, cc, subject, body)
+        sent_mail = MailUtilities.sendHtmlMail(to, cc, subject, body)
+        if sent_mail is True:
+
+            return "Email has been sent"
