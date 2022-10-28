@@ -1,8 +1,8 @@
 import os
-
+import traceback
 import pandas as pd
 import xlrd
-
+import logging
 from ..database.employee_orm import person_orm
 from ..util.utilities import Utilities
 
@@ -117,6 +117,8 @@ class personservice(object):
             return status
         except Exception as e:
             print(str(e))
+            print(str(traceback.format_exc()))
+            logging.error(str(e))
 
     @staticmethod
     def fetch_complete_data():
@@ -125,7 +127,8 @@ class personservice(object):
             return data
 
         except Exception as e:
-            print(str(e))
+            print(str(traceback.format_exc()))
+            logging.error(str(e))
 
     @staticmethod
     def insert_data(result_data):
@@ -133,7 +136,8 @@ class personservice(object):
             df = pd.DataFrame(result_data)
             return df
         except Exception as e:
-            print(str(e))
+            print(str(traceback.format_exc()))
+            logging.error(str(e))
 
     @staticmethod
     def data_to_file(file_data, out_path, dt_start):

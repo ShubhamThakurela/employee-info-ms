@@ -1,5 +1,6 @@
+import logging
+import traceback
 from datetime import datetime
-
 from ..database import connector
 
 
@@ -36,8 +37,8 @@ class person_orm(object):
             db.close()
             return "insert successfully"
         except Exception as e:
-            print(e)
-            return None
+            print(str(traceback.format_exc()))
+            logging.error(str(e))
 
     @staticmethod
     def max_id():
@@ -166,4 +167,5 @@ class person_orm(object):
             return "insert successfully"
         except Exception as e:
             print(e)
-            return None
+            print(str(traceback.format_exc()))
+            logging.error(str(e))
