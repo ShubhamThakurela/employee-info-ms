@@ -44,67 +44,86 @@ class personservice(object):
 
     @staticmethod
     def search_person(query_dict):
-        where = Utilities.construct_where_clause_from_dict(query_dict)
-        data = person_orm.search_in_persons(where)
-        result = []
-        for i in data:
-            result.append({
-                'id': i[0],
-                'name': i[1],
-                'designation': i[2],
-                'salary': i[3],
-                'job_location': i[4],
-                'employer': i[5],
-                'skills': i[6],
-                'dt': str(i[7])
-            })
-        # print(result)
-        return result
+        try:
+            where = Utilities.construct_where_clause_from_dict(query_dict)
+            data = person_orm.search_in_persons(where)
+            result = []
+            for i in data:
+                result.append({
+                    'id': i[0],
+                    'name': i[1],
+                    'designation': i[2],
+                    'salary': i[3],
+                    'job_location': i[4],
+                    'employer': i[5],
+                    'skills': i[6],
+                    'dt': str(i[7])
+                    })
+                return result
+
+        except Exception as e:
+            print(str(traceback.format_exc()))
+            logging.error(str(e))
 
     @staticmethod
     def get_record_by_person_id(id):
-        data = person_orm.search_by_person_id(id)
-        result = []
-        for i in data:
-            result.append({
-                'id': i[0],
-                'name': i[1],
-                'designation': i[2],
-                'salary': i[3],
-                'job_location': i[4],
-                'employer': i[5],
-                'skills': i[6],
-                'dt': str(i[7])
-            })
-        return result
+        try:
+            data = person_orm.search_by_person_id(id)
+            result = []
+            for i in data:
+                result.append({
+                    'id': i[0],
+                    'name': i[1],
+                    'designation': i[2],
+                    'salary': i[3],
+                    'job_location': i[4],
+                    'employer': i[5],
+                    'skills': i[6],
+                    'dt': str(i[7])
+                    })
+            return result
+        except Exception as e:
+            print(str(traceback.format_exc()))
+            logging.error(str(e))
 
     @staticmethod
     def get_record_by_id(id):
-        data = person_orm.get_record_by_id(id)
-        result = []
-        for i in data:
-            result.append({
-                'id': i[0],
-                'name': i[1],
-                'designation': i[2],
-                'salary': i[3],
-                'job_location': i[4],
-                'employer': i[5],
-                'skills': i[6],
-                'dt': str(i[7])
-            })
-        # print(result)
-        return result
+        try:
+            data = person_orm.get_record_by_id(id)
+            result = []
+            for i in data:
+                result.append({
+                    'id': i[0],
+                    'name': i[1],
+                    'designation': i[2],
+                    'salary': i[3],
+                    'job_location': i[4],
+                    'employer': i[5],
+                    'skills': i[6],
+                    'dt': str(i[7])
+                 })
+            return result
+        except Exception as e:
+            print(str(traceback.format_exc()))
+            logging.error(str(e))
 
     @staticmethod
     def updateRecord(update_set, emp_id):
-        status = person_orm.update_employee(update_set, emp_id)
-        return status
+        try:
+            status = person_orm.update_employee(update_set, emp_id)
+            return status
+        except Exception as e:
+            print(str(traceback.format_exc()))
+            logging.error(str(e))
 
     @staticmethod
     def delete_record(id):
-        status = person_orm.delete_record(id)
-        return status
+        try:
+            status = person_orm.delete_record(id)
+            return status
+        except Exception as e:
+            print(str(traceback.format_exc()))
+            logging.error(str(e))
 
     @staticmethod
     def insert_file(file_path):
@@ -140,17 +159,21 @@ class personservice(object):
             logging.error(str(e))
 
     @staticmethod
-    def data_to_file(file_data, out_path, dt_start):
-        file_path = out_path + '/'
-        file_name = "employees_data"
-        if not os.path.exists(os.path.dirname(file_path)):
-            os.makedirs(os.path.dirname(file_path))
-        file_data.rename(columns={
-            0: 'Employee_id', 1: 'Employee_name', 2: 'Employee_designation',
-            3: 'Employee_salary', 4: 'Employee_Job_location', 5: 'Employee_employer',
-            6: 'Employee_skills', 7: 'Insertion_data'
-        }, inplace=True)
-        file_data.to_csv(file_path + file_name + '.csv', index=False)
-        file_save_name = file_name + ".csv"
+    def data_to_file(file_data, out_path):
+        try:
+            file_path = out_path + '/'
+            file_name = "employees_data"
+            if not os.path.exists(os.path.dirname(file_path)):
+                os.makedirs(os.path.dirname(file_path))
+            file_data.rename(columns={
+                0: 'Employee_id', 1: 'Employee_name', 2: 'Employee_designation',
+                3: 'Employee_salary', 4: 'Employee_Job_location', 5: 'Employee_employer',
+                6: 'Employee_skills', 7: 'Insertion_data'
+            }, inplace=True)
+            file_data.to_csv(file_path + file_name + '.csv', index=False)
+            file_save_name = file_name + ".csv"
 
-        return file_save_name
+            return file_save_name
+        except Exception as e:
+            print(str(traceback.format_exc()))
+            logging.error(str(e))
