@@ -172,6 +172,7 @@ class employeeFile(Resource):
             dt_start = now.strftime("%d/%m/%Y %H:%M:%S")
             start_time = time.time()
             status = personservice.insert_file(file_path)
+
             end_time = time.time()
             insertfile = file.filename
             if email_id is not None:
