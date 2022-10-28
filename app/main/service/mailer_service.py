@@ -4,7 +4,6 @@ import smtplib
 import time
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
-
 from .constan_service import ConstantService
 
 
@@ -231,20 +230,15 @@ class MailUtilities(object):
             '''
         now = datetime.datetime.now()
         dt_string = now.strftime("%d/%m/%Y %H:%M:%S")
-
         # head_message = "Xignite {type} process has been started."
         head_message = "Execution successfully Completed"
-
         status = "Completed"
-
         to = emails
         cc = ConstantService.cc_mail_id()
         subject = " Employee Ms Notification - Success"
-
         head_message.format(type="Quarterly")
         body = raw_body.format(head_message=head_message, status=status, insertfile=insertfile,
                                dt=dt_start, dtt=dt_string)
-
         sent_mail = MailUtilities.sendHtmlMail(to, cc, subject, body)
         if sent_mail is True:
 
