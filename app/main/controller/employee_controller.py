@@ -4,13 +4,11 @@ import shutil
 import time
 import traceback
 from datetime import datetime
-
 from flask import jsonify
 from flask import request
 from flask_restx import Resource
 from service.constan_service import ConstantService
 from werkzeug.datastructures import FileStorage
-
 from ..service.employee_service import personservice
 from ..service.mailer_service import MailUtilities
 from ..util.dto import EmployeeDto
@@ -107,6 +105,7 @@ class download_employee_data(Resource):
             }
         except Exception as e:
             print(str(e))
+            logging.error(str(e))
             if email_id is not None:
                 MailUtilities.send_failed_notification(email_id, str(e), dt_start)
 
@@ -204,6 +203,7 @@ class employeeFile(Resource):
             }
         except Exception as e:
             print(str(e))
+            logging.error(str(e))
 
 
 @api.route('/insert_employee')
@@ -441,7 +441,7 @@ class updateRecord(Resource):
                             response = {
                                 "status": True,
                                 "message": "Updated Successfully",
-                                "updated data to employee": emp_id,
+                                "updated data to employee_id": emp_id,
                                 "code": 201
                             }
                             return jsonify(response)
@@ -468,6 +468,7 @@ class updateRecord(Resource):
                 return jsonify(response)
         except Exception as e:
             print(str(traceback.format_exc()))
+            logging.error(str(e))
             response = {
                 "status": False,
                 "message": "Sorry an error occurred",

@@ -1,10 +1,12 @@
 import unittest
+import constant
 from app.main import create_app
 from dotenv import load_dotenv
 from flask_migrate import Migrate, MigrateCommand
 from flask_script import Manager
 from app import blueprint
 from app.main import db
+from constant.paths import SERVER_HOST
 
 load_dotenv()
 """app = create_app(os.getenv('CURRENT_ENV') or 'dev')"""
@@ -33,4 +35,6 @@ def test():
 
 
 if __name__ == '__main__':
+    print("Server_running", constant.paths.SERVER_HOST)
     manager.run()
+
