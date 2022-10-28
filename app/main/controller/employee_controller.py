@@ -81,7 +81,7 @@ class download_employee_data(Resource):
             """"Insert data to dataframe"""
             file_data = personservice.insert_data(result_data)
             """Write dataframe to excel"""
-            data_file = personservice.data_to_file(file_data, out_path, dt_start)
+            data_file = personservice.data_to_file(file_data, out_path)
             download_link = "http://" + ConstantService.server_host() + "/Download/download_data_file?output_file_name=" + data_file
             end_time = time.time()
             if email_id is not None:

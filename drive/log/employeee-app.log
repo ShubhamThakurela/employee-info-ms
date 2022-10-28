@@ -1,0 +1,11 @@
+2022-10-28 21:17:21,170 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+2022-10-28 21:17:21,174 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO  * Restarting with stat
+2022-10-28 21:17:23,866 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 WARNING  * Debugger is active!
+2022-10-28 21:17:23,880 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO  * Debugger PIN: 114-466-439
+2022-10-28 21:17:35,356 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO 127.0.0.1 - - [28/Oct/2022 21:17:35] "GET / HTTP/1.1" 200 -
+2022-10-28 21:17:35,603 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO 127.0.0.1 - - [28/Oct/2022 21:17:35] "[36mGET /swaggerui/droid-sans.css HTTP/1.1[0m" 304 -
+2022-10-28 21:17:35,652 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO 127.0.0.1 - - [28/Oct/2022 21:17:35] "[36mGET /swaggerui/swagger-ui.css HTTP/1.1[0m" 304 -
+2022-10-28 21:17:36,029 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO 127.0.0.1 - - [28/Oct/2022 21:17:36] "[36mGET /swaggerui/swagger-ui-bundle.js HTTP/1.1[0m" 304 -
+2022-10-28 21:17:36,312 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO 127.0.0.1 - - [28/Oct/2022 21:17:36] "[36mGET /swaggerui/swagger-ui-standalone-preset.js HTTP/1.1[0m" 304 -
+2022-10-28 21:17:37,436 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO 127.0.0.1 - - [28/Oct/2022 21:17:37] "GET /swagger.json HTTP/1.1" 200 -
+2022-10-28 21:17:37,974 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO 127.0.0.1 - - [28/Oct/2022 21:17:37] "[36mGET /swaggerui/favicon-32x32.png HTTP/1.1[0m" 304 -
