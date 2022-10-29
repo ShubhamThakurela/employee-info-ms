@@ -1,6 +1,6 @@
 import logging
 import traceback
-from database import connector
+from ..database import connector
 from flask import session
 import jwt
 
