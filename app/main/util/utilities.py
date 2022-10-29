@@ -22,7 +22,7 @@ class Utilities:
                 if value.isdigit() or key.__contains__("date"):
                     where = where + str(key) + " like '" + str(value) + "' and "
                 else:
-                    where = where + str(key) + " like '%" + str(value) + "%' and "
+                    where = where + str(key) + " regexp'(^|[[:space:]])" + str(value) + "([[:space:]]|$)' "
             where = where.strip(" and ") + ";"
             return where
         else:

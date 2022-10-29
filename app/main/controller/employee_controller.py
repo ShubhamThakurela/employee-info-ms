@@ -9,6 +9,7 @@ from flask import request
 from flask_restx import Resource
 from service.constan_service import ConstantService
 from werkzeug.datastructures import FileStorage
+from service.login_service import login_required
 from ..service.employee_service import personservice
 from ..service.mailer_service import MailUtilities
 from ..util.dto import EmployeeDto
@@ -25,6 +26,14 @@ class delete_record(Resource):
         params={'employee_id': {'description': 'Employee ID', 'in': 'query', 'type': 'str'}})
     def delete(self):
         try:
+            login_result = login_required()
+            if not login_result:
+                response = {
+                    "status": False,
+                    "code": 111,
+                    "message": "Login required",
+                }
+                return jsonify(response)
             emp_id = request.args.get("employee_id")
             if emp_id != None and emp_id.isdigit():
                 result = personservice.delete_record(emp_id)
@@ -75,6 +84,14 @@ class download_employee_data(Resource):
         now = datetime.now()
         dt_start = now.strftime("%d/%m/%Y %H:%M:%S")
         try:
+            login_result = login_required()
+            if not login_result:
+                response = {
+                    "status": False,
+                    "code": 111,
+                    "message": "Login required",
+                }
+                return jsonify(response)
             """"file store_path"""
             out_path = ConstantService.data_out_path()
             result_data = personservice.fetch_complete_data()
@@ -114,6 +131,14 @@ class download_employee_data(Resource):
 class GetAllPerson(Resource):
     def get(self):
         try:
+            login_result = login_required()
+            if not login_result:
+                response = {
+                    "status": False,
+                    "code": 111,
+                    "message": "Login required",
+                }
+                return jsonify(response)
             result = personservice.get_person()
             if result:
                 response = {"status": True,
@@ -169,6 +194,14 @@ class employeeFile(Resource):
         else:
             return res
         try:
+            login_result = login_required()
+            if not login_result:
+                response = {
+                    "status": False,
+                    "code": 111,
+                    "message": "Login required",
+                }
+                return jsonify(response)
             now = datetime.now()
             dt_start = now.strftime("%d/%m/%Y %H:%M:%S")
             start_time = time.time()
@@ -181,7 +214,7 @@ class employeeFile(Resource):
             end_time = time.time()
             insertfile = file.filename
             if email_id is not None:
-                mail_status = MailUtilities.send_success_noti(email_id,  dt_start, insertfile)
+                mail_status = MailUtilities.send_success_noti(email_id, dt_start, insertfile)
                 if mail_status == "Email has been sent":
                     return {
                         "status": True,
@@ -225,6 +258,14 @@ class insert_person(Resource):
         'skills': 'employee_skills'})
     def post(self):
         try:
+            login_result = login_required()
+            if not login_result:
+                response = {
+                    "status": False,
+                    "code": 111,
+                    "message": "Login required",
+                }
+                return jsonify(response)
             data = {
                 "name": request.args.get('name'),
                 'designation': request.args.get('designation'),
@@ -285,9 +326,17 @@ class insert_person(Resource):
 
 @api.route('/searchemployee')
 class search(Resource):
-    @api.doc(params={'id': 'id', 'name': 'name'})
+    @api.doc(params={'Person_id': 'id', 'name': 'name'})
     def get(self):
         try:
+            login_result = login_required()
+            if not login_result:
+                response = {
+                    "status": False,
+                    "code": 111,
+                    "message": "Login required",
+                }
+                return jsonify(response)
             data = {}
             data["id"] = request.args.get('id')
             data["name"] = request.args.get('name')
@@ -317,27 +366,27 @@ class search(Resource):
 
                     return jsonify(response)
 
+                if 'name' in query_dict and result is not None:
+                    response = {
+                        "status": True,
+                        "message": "successfully fetch the record",
+                        "Employee_name": data["name"],
+                        "code": 200,
+                        "result": result
+                    }
+                    return jsonify(response)
                 else:
-                    if 'name' in query_dict:
-                        response = {
-                            "status": True,
-                            "message": "successfully fetch the record",
-                            "Employee_name": data["name"],
-                            "code": 200,
-                            "result": result
-                        }
-                        return jsonify(response)
-                    else:
-                        response = {"status": False,
-                                    "message": "Data not found",
-                                    "code": 404,
-                                    }
+                    response = {"status": False,
+                                "message": "Data not found",
+                                "Information": "Please enter correct name",
+                                "Employee_name": data["name"],
+                                "code": 404,
+                                }
 
                     return jsonify(response)
-
             else:
                 response = {"status": False,
-                            "message": "Please Enter atleast one entity to search",
+                            "message": "Please Enter at-least one entity to search",
                             "code": 404,
                             }
                 return jsonify(response)
@@ -360,6 +409,14 @@ class GetPersonByID(Resource):
     })
     def get(self):
         try:
+            login_result = login_required()
+            if not login_result:
+                response = {
+                    "status": False,
+                    "code": 111,
+                    "message": "Login required",
+                }
+                return jsonify(response)
             person_id = request.args.get('employee_id')
             if person_id is not None and person_id.isdigit():
                 result = personservice.get_record_by_person_id(person_id)
@@ -403,6 +460,14 @@ class updateRecord(Resource):
         'skills': 'employee_skills'})
     def put(self):
         try:
+            login_result = login_required()
+            if not login_result:
+                response = {
+                    "status": False,
+                    "code": 111,
+                    "message": "Login required",
+                }
+                return jsonify(response)
             data = {
                 "id": request.args.get('id'),
                 "name": request.args.get('name'),

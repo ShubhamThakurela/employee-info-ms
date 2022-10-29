@@ -1,6 +1,5 @@
 import pymysql
-
-from ..database import config
+from database import config
 
 CREDENTIALS = {
     'USERNAME': config.db['user'],

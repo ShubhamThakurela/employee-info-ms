@@ -9,3 +9,448 @@
 2022-10-28 21:17:36,312 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO 127.0.0.1 - - [28/Oct/2022 21:17:36] "[36mGET /swaggerui/swagger-ui-standalone-preset.js HTTP/1.1[0m" 304 -
 2022-10-28 21:17:37,436 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO 127.0.0.1 - - [28/Oct/2022 21:17:37] "GET /swagger.json HTTP/1.1" 200 -
 2022-10-28 21:17:37,974 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO 127.0.0.1 - - [28/Oct/2022 21:17:37] "[36mGET /swaggerui/favicon-32x32.png HTTP/1.1[0m" 304 -
+2022-10-28 22:59:55,612 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+2022-10-28 22:59:55,615 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO  * Restarting with stat
+2022-10-28 22:59:58,139 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 WARNING  * Debugger is active!
+2022-10-28 22:59:58,150 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO  * Debugger PIN: 114-466-439
+2022-10-28 23:00:06,130 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO 127.0.0.1 - - [28/Oct/2022 23:00:06] "GET / HTTP/1.1" 200 -
+2022-10-28 23:00:06,211 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO 127.0.0.1 - - [28/Oct/2022 23:00:06] "[36mGET /swaggerui/droid-sans.css HTTP/1.1[0m" 304 -
+2022-10-28 23:00:06,239 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO 127.0.0.1 - - [28/Oct/2022 23:00:06] "[36mGET /swaggerui/swagger-ui.css HTTP/1.1[0m" 304 -
+2022-10-28 23:00:06,555 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO 127.0.0.1 - - [28/Oct/2022 23:00:06] "[36mGET /swaggerui/swagger-ui-standalone-preset.js HTTP/1.1[0m" 304 -
+2022-10-28 23:00:06,565 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO 127.0.0.1 - - [28/Oct/2022 23:00:06] "[36mGET /swaggerui/swagger-ui-bundle.js HTTP/1.1[0m" 304 -
+2022-10-28 23:00:07,105 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO 127.0.0.1 - - [28/Oct/2022 23:00:07] "GET /swagger.json HTTP/1.1" 200 -
+2022-10-28 23:00:12,720 EMPAPP00001 W:\employee_app\env\lib\site-packages\flask_cors\core.py core.py core serialize_options 362 WARNING Unknown option passed to Flask-CORS: origin
+2022-10-28 23:00:12,721 EMPAPP00001 W:\employee_app\env\lib\site-packages\flask_cors\core.py core.py core serialize_options 362 WARNING Unknown option passed to Flask-CORS: headers
+2022-10-28 23:00:12,749 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO 127.0.0.1 - - [28/Oct/2022 23:00:12] "POST /login/login HTTP/1.1" 200 -
+2022-10-28 23:00:44,687 EMPAPP00001 W:\employee_app\env\lib\site-packages\flask_cors\core.py core.py core serialize_options 362 WARNING Unknown option passed to Flask-CORS: origin
+2022-10-28 23:00:44,687 EMPAPP00001 W:\employee_app\env\lib\site-packages\flask_cors\core.py core.py core serialize_options 362 WARNING Unknown option passed to Flask-CORS: headers
+2022-10-28 23:00:44,699 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO 127.0.0.1 - - [28/Oct/2022 23:00:44] "POST /login/login?Email=subham.thakurela%40gmail.com&Password=123456 HTTP/1.1" 200 -
+2022-10-28 23:01:11,522 EMPAPP00001 W:\employee_app\env\lib\site-packages\flask_cors\core.py core.py core serialize_options 362 WARNING Unknown option passed to Flask-CORS: origin
+2022-10-28 23:01:11,522 EMPAPP00001 W:\employee_app\env\lib\site-packages\flask_cors\core.py core.py core serialize_options 362 WARNING Unknown option passed to Flask-CORS: headers
+2022-10-28 23:01:11,523 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO 127.0.0.1 - - [28/Oct/2022 23:01:11] "GET /login/logout HTTP/1.1" 200 -
+2022-10-28 23:01:57,000 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+2022-10-28 23:01:57,003 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO  * Restarting with stat
+2022-10-28 23:01:59,548 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 WARNING  * Debugger is active!
+2022-10-28 23:01:59,558 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO  * Debugger PIN: 114-466-439
+2022-10-28 23:02:41,985 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+2022-10-28 23:02:41,988 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO  * Restarting with stat
+2022-10-28 23:02:44,497 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 WARNING  * Debugger is active!
+2022-10-28 23:02:44,510 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO  * Debugger PIN: 114-466-439
+2022-10-28 23:03:03,694 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+2022-10-28 23:03:03,697 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO  * Restarting with stat
+2022-10-28 23:03:06,698 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 WARNING  * Debugger is active!
+2022-10-28 23:03:06,709 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO  * Debugger PIN: 114-466-439
+2022-10-28 23:03:08,909 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO 127.0.0.1 - - [28/Oct/2022 23:03:08] "GET /Employee/fetchallperson HTTP/1.1" 200 -
+2022-10-28 23:07:25,863 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+2022-10-28 23:07:25,866 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO  * Restarting with stat
+2022-10-28 23:07:28,498 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 WARNING  * Debugger is active!
+2022-10-28 23:07:28,511 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO  * Debugger PIN: 114-466-439
+2022-10-28 23:07:31,533 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO 127.0.0.1 - - [28/Oct/2022 23:07:31] "GET / HTTP/1.1" 200 -
+2022-10-28 23:07:31,623 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO 127.0.0.1 - - [28/Oct/2022 23:07:31] "[36mGET /swaggerui/droid-sans.css HTTP/1.1[0m" 304 -
+2022-10-28 23:07:31,633 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO 127.0.0.1 - - [28/Oct/2022 23:07:31] "[36mGET /swaggerui/swagger-ui.css HTTP/1.1[0m" 304 -
+2022-10-28 23:07:31,654 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO 127.0.0.1 - - [28/Oct/2022 23:07:31] "[36mGET /swaggerui/swagger-ui-bundle.js HTTP/1.1[0m" 304 -
+2022-10-28 23:07:31,674 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO 127.0.0.1 - - [28/Oct/2022 23:07:31] "[36mGET /swaggerui/swagger-ui-standalone-preset.js HTTP/1.1[0m" 304 -
+2022-10-28 23:07:32,726 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO 127.0.0.1 - - [28/Oct/2022 23:07:32] "GET /swagger.json HTTP/1.1" 200 -
+2022-10-28 23:07:32,748 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO 127.0.0.1 - - [28/Oct/2022 23:07:32] "[36mGET /swaggerui/favicon-32x32.png HTTP/1.1[0m" 304 -
+2022-10-28 23:07:37,906 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO 127.0.0.1 - - [28/Oct/2022 23:07:37] "GET /Download/download_data_file HTTP/1.1" 200 -
+2022-10-28 23:08:14,418 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO 127.0.0.1 - - [28/Oct/2022 23:08:14] "GET /Download/download_data_file?output_file_name=employees_data.csv HTTP/1.1" 200 -
+2022-10-28 23:08:42,119 EMPAPP00001 W:\employee_app\env\lib\site-packages\flask_cors\core.py core.py core serialize_options 362 WARNING Unknown option passed to Flask-CORS: origin
+2022-10-28 23:08:42,120 EMPAPP00001 W:\employee_app\env\lib\site-packages\flask_cors\core.py core.py core serialize_options 362 WARNING Unknown option passed to Flask-CORS: headers
+2022-10-28 23:08:42,152 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO 127.0.0.1 - - [28/Oct/2022 23:08:42] "POST /login/login?Email=subham.thakurela11%40gmail.com&Password=12345 HTTP/1.1" 200 -
+2022-10-28 23:08:51,368 EMPAPP00001 W:\employee_app\env\lib\site-packages\flask_cors\core.py core.py core serialize_options 362 WARNING Unknown option passed to Flask-CORS: origin
+2022-10-28 23:08:51,368 EMPAPP00001 W:\employee_app\env\lib\site-packages\flask_cors\core.py core.py core serialize_options 362 WARNING Unknown option passed to Flask-CORS: headers
+2022-10-28 23:08:51,385 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO 127.0.0.1 - - [28/Oct/2022 23:08:51] "POST /login/login?Email=subham.thakurela%40gmail.com&Password=123456 HTTP/1.1" 200 -
+2022-10-28 23:09:03,675 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO 127.0.0.1 - - [28/Oct/2022 23:09:03] "GET /Download/download_data_file?output_file_name=employees_data.csv HTTP/1.1" 200 -
+2022-10-28 23:18:45,628 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+2022-10-28 23:18:45,632 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO  * Restarting with stat
+2022-10-28 23:18:48,295 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 WARNING  * Debugger is active!
+2022-10-28 23:18:48,309 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO  * Debugger PIN: 114-466-439
+2022-10-28 23:19:02,135 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO  * Detected change in 'W:\\employee_app\\app\\main\\database\\connector.py', reloading
+2022-10-28 23:19:02,589 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO  * Restarting with stat
+2022-10-28 23:19:06,872 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 WARNING  * Debugger is active!
+2022-10-28 23:19:06,882 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO  * Debugger PIN: 114-466-439
+2022-10-28 23:19:07,016 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO 127.0.0.1 - - [28/Oct/2022 23:19:07] "GET / HTTP/1.1" 200 -
+2022-10-28 23:19:07,077 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO 127.0.0.1 - - [28/Oct/2022 23:19:07] "[36mGET /swaggerui/droid-sans.css HTTP/1.1[0m" 304 -
+2022-10-28 23:19:07,082 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO 127.0.0.1 - - [28/Oct/2022 23:19:07] "[36mGET /swaggerui/swagger-ui-bundle.js HTTP/1.1[0m" 304 -
+2022-10-28 23:19:07,087 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO 127.0.0.1 - - [28/Oct/2022 23:19:07] "[36mGET /swaggerui/swagger-ui.css HTTP/1.1[0m" 304 -
+2022-10-28 23:19:07,090 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO 127.0.0.1 - - [28/Oct/2022 23:19:07] "[36mGET /swaggerui/swagger-ui-standalone-preset.js HTTP/1.1[0m" 304 -
+2022-10-28 23:19:07,729 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO 127.0.0.1 - - [28/Oct/2022 23:19:07] "GET /swagger.json HTTP/1.1" 200 -
+2022-10-28 23:19:07,740 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO 127.0.0.1 - - [28/Oct/2022 23:19:07] "[36mGET /swaggerui/favicon-32x32.png HTTP/1.1[0m" 304 -
+2022-10-28 23:19:13,480 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO 127.0.0.1 - - [28/Oct/2022 23:19:13] "GET / HTTP/1.1" 200 -
+2022-10-28 23:19:13,533 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO 127.0.0.1 - - [28/Oct/2022 23:19:13] "[36mGET /swaggerui/droid-sans.css HTTP/1.1[0m" 304 -
+2022-10-28 23:19:13,539 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO 127.0.0.1 - - [28/Oct/2022 23:19:13] "[36mGET /swaggerui/swagger-ui.css HTTP/1.1[0m" 304 -
+2022-10-28 23:19:13,547 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO 127.0.0.1 - - [28/Oct/2022 23:19:13] "[36mGET /swaggerui/swagger-ui-bundle.js HTTP/1.1[0m" 304 -
+2022-10-28 23:19:13,555 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO 127.0.0.1 - - [28/Oct/2022 23:19:13] "[36mGET /swaggerui/swagger-ui-standalone-preset.js HTTP/1.1[0m" 304 -
+2022-10-28 23:19:13,854 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO 127.0.0.1 - - [28/Oct/2022 23:19:13] "GET /swagger.json HTTP/1.1" 200 -
+2022-10-28 23:19:13,865 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO 127.0.0.1 - - [28/Oct/2022 23:19:13] "[36mGET /swaggerui/favicon-32x32.png HTTP/1.1[0m" 304 -
+2022-10-28 23:19:18,038 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO 127.0.0.1 - - [28/Oct/2022 23:19:18] "GET /Employee/fetchallperson HTTP/1.1" 200 -
+2022-10-28 23:19:49,444 EMPAPP00001 W:\employee_app\app\main\controller\download_controller.py download_controller.py download_controller get 38 ERROR join() argument must be str or bytes, not 'NoneType'
+2022-10-28 23:19:49,447 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO 127.0.0.1 - - [28/Oct/2022 23:19:49] "GET /Download/download_data_file HTTP/1.1" 200 -
+2022-10-28 23:20:02,036 EMPAPP00001 W:\employee_app\env\lib\site-packages\flask_cors\core.py core.py core serialize_options 362 WARNING Unknown option passed to Flask-CORS: origin
+2022-10-28 23:20:02,037 EMPAPP00001 W:\employee_app\env\lib\site-packages\flask_cors\core.py core.py core serialize_options 362 WARNING Unknown option passed to Flask-CORS: headers
+2022-10-28 23:20:02,040 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO 127.0.0.1 - - [28/Oct/2022 23:20:02] "GET /login/logout HTTP/1.1" 200 -
+2022-10-28 23:20:05,471 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO 127.0.0.1 - - [28/Oct/2022 23:20:05] "GET / HTTP/1.1" 200 -
+2022-10-28 23:20:05,532 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO 127.0.0.1 - - [28/Oct/2022 23:20:05] "[36mGET /swaggerui/droid-sans.css HTTP/1.1[0m" 304 -
+2022-10-28 23:20:05,539 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO 127.0.0.1 - - [28/Oct/2022 23:20:05] "[36mGET /swaggerui/swagger-ui.css HTTP/1.1[0m" 304 -
+2022-10-28 23:20:05,544 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO 127.0.0.1 - - [28/Oct/2022 23:20:05] "[36mGET /swaggerui/swagger-ui-bundle.js HTTP/1.1[0m" 304 -
+2022-10-28 23:20:05,547 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO 127.0.0.1 - - [28/Oct/2022 23:20:05] "[36mGET /swaggerui/swagger-ui-standalone-preset.js HTTP/1.1[0m" 304 -
+2022-10-28 23:20:05,803 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO 127.0.0.1 - - [28/Oct/2022 23:20:05] "GET /swagger.json HTTP/1.1" 200 -
+2022-10-28 23:20:05,815 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO 127.0.0.1 - - [28/Oct/2022 23:20:05] "[36mGET /swaggerui/favicon-32x32.png HTTP/1.1[0m" 304 -
+2022-10-28 23:20:10,281 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO 127.0.0.1 - - [28/Oct/2022 23:20:10] "GET /Download/download_data_file HTTP/1.1" 200 -
+2022-10-28 23:20:16,247 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO 127.0.0.1 - - [28/Oct/2022 23:20:16] "GET /Employee/fetchallperson HTTP/1.1" 200 -
+2022-10-28 23:20:24,295 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO 127.0.0.1 - - [28/Oct/2022 23:20:24] "POST /Employee/download_Alldata_from_table HTTP/1.1" 200 -
+2022-10-28 23:20:29,489 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO 127.0.0.1 - - [28/Oct/2022 23:20:29] "DELETE /Employee/delete_employee_by_id HTTP/1.1" 200 -
+2022-10-28 23:20:36,713 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO 127.0.0.1 - - [28/Oct/2022 23:20:36] "POST /Employee/insert_by_file HTTP/1.1" 200 -
+2022-10-28 23:20:55,138 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO 127.0.0.1 - - [28/Oct/2022 23:20:55] "POST /Employee/insert_by_file HTTP/1.1" 200 -
+2022-10-28 23:21:01,567 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO 127.0.0.1 - - [28/Oct/2022 23:21:01] "POST /Employee/insert_employee HTTP/1.1" 200 -
+2022-10-28 23:21:07,794 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO 127.0.0.1 - - [28/Oct/2022 23:21:07] "GET /Employee/searchemployee HTTP/1.1" 200 -
+2022-10-28 23:21:12,767 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO 127.0.0.1 - - [28/Oct/2022 23:21:12] "GET /Employee/showbyemployeeid HTTP/1.1" 200 -
+2022-10-28 23:21:18,375 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO 127.0.0.1 - - [28/Oct/2022 23:21:18] "PUT /Employee/update_employee HTTP/1.1" 200 -
+2022-10-28 23:22:09,180 EMPAPP00001 W:\employee_app\env\lib\site-packages\flask_cors\core.py core.py core serialize_options 362 WARNING Unknown option passed to Flask-CORS: origin
+2022-10-28 23:22:09,180 EMPAPP00001 W:\employee_app\env\lib\site-packages\flask_cors\core.py core.py core serialize_options 362 WARNING Unknown option passed to Flask-CORS: headers
+2022-10-28 23:22:09,209 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO 127.0.0.1 - - [28/Oct/2022 23:22:09] "POST /login/login?Email=subham.thakurela%40gmail.com&Password=12456 HTTP/1.1" 200 -
+2022-10-28 23:22:17,342 EMPAPP00001 W:\employee_app\env\lib\site-packages\flask_cors\core.py core.py core serialize_options 362 WARNING Unknown option passed to Flask-CORS: origin
+2022-10-28 23:22:17,343 EMPAPP00001 W:\employee_app\env\lib\site-packages\flask_cors\core.py core.py core serialize_options 362 WARNING Unknown option passed to Flask-CORS: headers
+2022-10-28 23:22:17,359 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO 127.0.0.1 - - [28/Oct/2022 23:22:17] "POST /login/login?Email=subham.thakurela%40gmail.com&Password=123456 HTTP/1.1" 200 -
+2022-10-28 23:22:35,257 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO 127.0.0.1 - - [28/Oct/2022 23:22:35] "GET /Employee/fetchallperson HTTP/1.1" 200 -
+2022-10-28 23:22:51,147 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO 127.0.0.1 - - [28/Oct/2022 23:22:51] "GET /Employee/searchemployee?id=3 HTTP/1.1" 200 -
+2022-10-28 23:23:02,429 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO 127.0.0.1 - - [28/Oct/2022 23:23:02] "GET /Employee/searchemployee?name=emp3 HTTP/1.1" 200 -
+2022-10-28 23:23:15,524 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO 127.0.0.1 - - [28/Oct/2022 23:23:15] "GET /Employee/showbyemployeeid?employee_id=10 HTTP/1.1" 200 -
+2022-10-28 23:24:22,059 EMPAPP00001 W:\employee_app\env\lib\site-packages\flask_cors\core.py core.py core serialize_options 362 WARNING Unknown option passed to Flask-CORS: origin
+2022-10-28 23:24:22,060 EMPAPP00001 W:\employee_app\env\lib\site-packages\flask_cors\core.py core.py core serialize_options 362 WARNING Unknown option passed to Flask-CORS: headers
+2022-10-28 23:24:22,061 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO 127.0.0.1 - - [28/Oct/2022 23:24:22] "GET /login/logout HTTP/1.1" 200 -
+2022-10-28 23:42:10,054 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+2022-10-28 23:42:10,054 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO  * Restarting with stat
+2022-10-28 23:42:16,364 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 WARNING  * Debugger is active!
+2022-10-28 23:42:16,382 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO  * Debugger PIN: 114-466-439
+2022-10-28 23:42:16,802 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO 127.0.0.1 - - [28/Oct/2022 23:42:16] "GET / HTTP/1.1" 200 -
+2022-10-28 23:42:16,888 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO 127.0.0.1 - - [28/Oct/2022 23:42:16] "[36mGET /swaggerui/droid-sans.css HTTP/1.1[0m" 304 -
+2022-10-28 23:42:16,889 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO 127.0.0.1 - - [28/Oct/2022 23:42:16] "[36mGET /swaggerui/swagger-ui.css HTTP/1.1[0m" 304 -
+2022-10-28 23:42:16,893 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO 127.0.0.1 - - [28/Oct/2022 23:42:16] "[36mGET /swaggerui/swagger-ui-standalone-preset.js HTTP/1.1[0m" 304 -
+2022-10-28 23:42:16,895 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO 127.0.0.1 - - [28/Oct/2022 23:42:16] "[36mGET /swaggerui/swagger-ui-bundle.js HTTP/1.1[0m" 304 -
+2022-10-28 23:42:17,472 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO 127.0.0.1 - - [28/Oct/2022 23:42:17] "GET /swagger.json HTTP/1.1" 200 -
+2022-10-28 23:42:17,472 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO 127.0.0.1 - - [28/Oct/2022 23:42:17] "[36mGET /swaggerui/favicon-32x32.png HTTP/1.1[0m" 304 -
+2022-10-28 23:42:25,221 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO 127.0.0.1 - - [28/Oct/2022 23:42:25] "GET /Employee/fetchallperson HTTP/1.1" 200 -
+2022-10-28 23:43:06,069 EMPAPP00001 W:\employee_app\env\lib\site-packages\flask_cors\core.py core.py core serialize_options 362 WARNING Unknown option passed to Flask-CORS: origin
+2022-10-28 23:43:06,069 EMPAPP00001 W:\employee_app\env\lib\site-packages\flask_cors\core.py core.py core serialize_options 362 WARNING Unknown option passed to Flask-CORS: headers
+2022-10-28 23:45:00,490 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+2022-10-28 23:45:00,490 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO  * Restarting with stat
+2022-10-28 23:45:05,254 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 WARNING  * Debugger is active!
+2022-10-28 23:45:05,285 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO  * Debugger PIN: 114-466-439
+2022-10-28 23:45:08,246 EMPAPP00001 W:\employee_app\env\lib\site-packages\flask_cors\core.py core.py core serialize_options 362 WARNING Unknown option passed to Flask-CORS: origin
+2022-10-28 23:45:08,247 EMPAPP00001 W:\employee_app\env\lib\site-packages\flask_cors\core.py core.py core serialize_options 362 WARNING Unknown option passed to Flask-CORS: headers
+2022-10-28 23:45:41,256 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+2022-10-28 23:45:41,271 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO  * Restarting with stat
+2022-10-28 23:45:47,995 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 WARNING  * Debugger is active!
+2022-10-28 23:45:48,010 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO  * Debugger PIN: 114-466-439
+2022-10-28 23:45:48,339 EMPAPP00001 W:\employee_app\env\lib\site-packages\flask_cors\core.py core.py core serialize_options 362 WARNING Unknown option passed to Flask-CORS: origin
+2022-10-28 23:45:48,339 EMPAPP00001 W:\employee_app\env\lib\site-packages\flask_cors\core.py core.py core serialize_options 362 WARNING Unknown option passed to Flask-CORS: headers
+2022-10-28 23:47:00,623 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+2022-10-28 23:47:00,623 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO  * Restarting with stat
+2022-10-28 23:47:07,977 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 WARNING  * Debugger is active!
+2022-10-28 23:47:08,009 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO  * Debugger PIN: 114-466-439
+2022-10-28 23:47:08,393 EMPAPP00001 W:\employee_app\env\lib\site-packages\flask_cors\core.py core.py core serialize_options 362 WARNING Unknown option passed to Flask-CORS: origin
+2022-10-28 23:47:08,393 EMPAPP00001 W:\employee_app\env\lib\site-packages\flask_cors\core.py core.py core serialize_options 362 WARNING Unknown option passed to Flask-CORS: headers
+2022-10-28 23:48:10,616 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+2022-10-28 23:48:10,638 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO  * Restarting with stat
+2022-10-28 23:48:16,083 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 WARNING  * Debugger is active!
+2022-10-28 23:48:16,122 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO  * Debugger PIN: 114-466-439
+2022-10-28 23:48:18,081 EMPAPP00001 W:\employee_app\env\lib\site-packages\flask_cors\core.py core.py core serialize_options 362 WARNING Unknown option passed to Flask-CORS: origin
+2022-10-28 23:48:18,082 EMPAPP00001 W:\employee_app\env\lib\site-packages\flask_cors\core.py core.py core serialize_options 362 WARNING Unknown option passed to Flask-CORS: headers
+2022-10-28 23:49:46,046 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+2022-10-28 23:49:46,061 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO  * Restarting with stat
+2022-10-28 23:49:50,748 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 WARNING  * Debugger is active!
+2022-10-28 23:49:50,779 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO  * Debugger PIN: 114-466-439
+2022-10-28 23:49:53,433 EMPAPP00001 W:\employee_app\env\lib\site-packages\flask_cors\core.py core.py core serialize_options 362 WARNING Unknown option passed to Flask-CORS: origin
+2022-10-28 23:49:53,434 EMPAPP00001 W:\employee_app\env\lib\site-packages\flask_cors\core.py core.py core serialize_options 362 WARNING Unknown option passed to Flask-CORS: headers
+2022-10-28 23:50:57,801 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+2022-10-28 23:50:57,817 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO  * Restarting with stat
+2022-10-28 23:51:02,615 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 WARNING  * Debugger is active!
+2022-10-28 23:51:02,631 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO  * Debugger PIN: 114-466-439
+2022-10-28 23:51:23,109 EMPAPP00001 W:\employee_app\env\lib\site-packages\flask_cors\core.py core.py core serialize_options 362 WARNING Unknown option passed to Flask-CORS: origin
+2022-10-28 23:51:23,109 EMPAPP00001 W:\employee_app\env\lib\site-packages\flask_cors\core.py core.py core serialize_options 362 WARNING Unknown option passed to Flask-CORS: headers
+2022-10-28 23:56:13,456 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+2022-10-28 23:56:13,460 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO  * Restarting with stat
+2022-10-28 23:56:16,315 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 WARNING  * Debugger is active!
+2022-10-28 23:56:16,326 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO  * Debugger PIN: 114-466-439
+2022-10-28 23:56:41,821 EMPAPP00001 W:\employee_app\env\lib\site-packages\flask_cors\core.py core.py core serialize_options 362 WARNING Unknown option passed to Flask-CORS: origin
+2022-10-28 23:56:41,822 EMPAPP00001 W:\employee_app\env\lib\site-packages\flask_cors\core.py core.py core serialize_options 362 WARNING Unknown option passed to Flask-CORS: headers
+2022-10-28 23:56:41,853 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO 127.0.0.1 - - [28/Oct/2022 23:56:41] "POST /login/add_user?Email=subham.singh234%40gmail.com&Password=123456&Name=Unknown HTTP/1.1" 200 -
+2022-10-28 23:57:54,681 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+2022-10-28 23:57:54,684 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO  * Restarting with stat
+2022-10-28 23:57:58,532 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 WARNING  * Debugger is active!
+2022-10-28 23:57:58,555 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO  * Debugger PIN: 114-466-439
+2022-10-28 23:57:59,023 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO 127.0.0.1 - - [28/Oct/2022 23:57:59] "GET / HTTP/1.1" 200 -
+2022-10-28 23:57:59,132 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO 127.0.0.1 - - [28/Oct/2022 23:57:59] "[36mGET /swaggerui/droid-sans.css HTTP/1.1[0m" 304 -
+2022-10-28 23:57:59,210 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO 127.0.0.1 - - [28/Oct/2022 23:57:59] "[36mGET /swaggerui/swagger-ui-standalone-preset.js HTTP/1.1[0m" 304 -
+2022-10-28 23:57:59,266 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO 127.0.0.1 - - [28/Oct/2022 23:57:59] "[36mGET /swaggerui/swagger-ui-bundle.js HTTP/1.1[0m" 304 -
+2022-10-28 23:57:59,284 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO 127.0.0.1 - - [28/Oct/2022 23:57:59] "[36mGET /swaggerui/swagger-ui.css HTTP/1.1[0m" 304 -
+2022-10-28 23:58:00,214 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO 127.0.0.1 - - [28/Oct/2022 23:58:00] "GET /swagger.json HTTP/1.1" 200 -
+2022-10-28 23:58:00,223 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO 127.0.0.1 - - [28/Oct/2022 23:58:00] "[36mGET /swaggerui/favicon-32x32.png HTTP/1.1[0m" 304 -
+2022-10-28 23:58:05,509 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO 127.0.0.1 - - [28/Oct/2022 23:58:05] "GET /Employee/fetchallperson HTTP/1.1" 200 -
+2022-10-28 23:58:13,205 EMPAPP00001 W:\employee_app\env\lib\site-packages\flask_cors\core.py core.py core serialize_options 362 WARNING Unknown option passed to Flask-CORS: origin
+2022-10-28 23:58:13,205 EMPAPP00001 W:\employee_app\env\lib\site-packages\flask_cors\core.py core.py core serialize_options 362 WARNING Unknown option passed to Flask-CORS: headers
+2022-10-28 23:58:13,206 EMPAPP00001 W:\employee_app\app\main\controller\login_controller.py login_controller.py login_controller post 51 ERROR Profile_check() missing 1 required positional argument: 'jwt_key'
+2022-10-28 23:58:13,358 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO 127.0.0.1 - - [28/Oct/2022 23:58:13] "[35m[1mPOST /login/add_user HTTP/1.1[0m" 500 -
+2022-10-29 00:00:38,468 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+2022-10-29 00:00:38,471 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO  * Restarting with stat
+2022-10-29 00:00:42,988 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 WARNING  * Debugger is active!
+2022-10-29 00:00:43,000 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO  * Debugger PIN: 114-466-439
+2022-10-29 00:00:43,139 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO 127.0.0.1 - - [29/Oct/2022 00:00:43] "GET / HTTP/1.1" 200 -
+2022-10-29 00:00:43,198 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO 127.0.0.1 - - [29/Oct/2022 00:00:43] "[36mGET /swaggerui/droid-sans.css HTTP/1.1[0m" 304 -
+2022-10-29 00:00:43,204 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO 127.0.0.1 - - [29/Oct/2022 00:00:43] "[36mGET /swaggerui/swagger-ui.css HTTP/1.1[0m" 304 -
+2022-10-29 00:00:43,219 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO 127.0.0.1 - - [29/Oct/2022 00:00:43] "[36mGET /swaggerui/swagger-ui-standalone-preset.js HTTP/1.1[0m" 304 -
+2022-10-29 00:00:43,221 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO 127.0.0.1 - - [29/Oct/2022 00:00:43] "[36mGET /swaggerui/swagger-ui-bundle.js HTTP/1.1[0m" 304 -
+2022-10-29 00:00:43,822 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO 127.0.0.1 - - [29/Oct/2022 00:00:43] "GET /swagger.json HTTP/1.1" 200 -
+2022-10-29 00:00:43,935 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO 127.0.0.1 - - [29/Oct/2022 00:00:43] "[36mGET /swaggerui/favicon-32x32.png HTTP/1.1[0m" 304 -
+2022-10-29 00:00:49,903 EMPAPP00001 W:\employee_app\env\lib\site-packages\flask_cors\core.py core.py core serialize_options 362 WARNING Unknown option passed to Flask-CORS: origin
+2022-10-29 00:00:49,904 EMPAPP00001 W:\employee_app\env\lib\site-packages\flask_cors\core.py core.py core serialize_options 362 WARNING Unknown option passed to Flask-CORS: headers
+2022-10-29 00:00:49,907 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO 127.0.0.1 - - [29/Oct/2022 00:00:49] "GET /login/logout HTTP/1.1" 200 -
+2022-10-29 00:00:57,336 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO 127.0.0.1 - - [29/Oct/2022 00:00:57] "GET /Employee/fetchallperson HTTP/1.1" 200 -
+2022-10-29 00:01:11,419 EMPAPP00001 W:\employee_app\env\lib\site-packages\flask_cors\core.py core.py core serialize_options 362 WARNING Unknown option passed to Flask-CORS: origin
+2022-10-29 00:01:11,420 EMPAPP00001 W:\employee_app\env\lib\site-packages\flask_cors\core.py core.py core serialize_options 362 WARNING Unknown option passed to Flask-CORS: headers
+2022-10-29 00:01:11,421 EMPAPP00001 W:\employee_app\app\main\controller\login_controller.py login_controller.py login_controller post 51 ERROR Profile_check() missing 1 required positional argument: 'jwt_key'
+2022-10-29 00:01:11,485 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO 127.0.0.1 - - [29/Oct/2022 00:01:11] "[35m[1mPOST /login/add_user HTTP/1.1[0m" 500 -
+2022-10-29 00:01:36,399 EMPAPP00001 W:\employee_app\env\lib\site-packages\flask_cors\core.py core.py core serialize_options 362 WARNING Unknown option passed to Flask-CORS: origin
+2022-10-29 00:01:36,400 EMPAPP00001 W:\employee_app\env\lib\site-packages\flask_cors\core.py core.py core serialize_options 362 WARNING Unknown option passed to Flask-CORS: headers
+2022-10-29 00:01:36,400 EMPAPP00001 W:\employee_app\app\main\controller\login_controller.py login_controller.py login_controller post 51 ERROR Profile_check() missing 1 required positional argument: 'jwt_key'
+2022-10-29 00:01:36,464 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO 127.0.0.1 - - [29/Oct/2022 00:01:36] "[35m[1mPOST /login/add_user?Email=skth%40fmnaul.com&Password=123&Name=st HTTP/1.1[0m" 500 -
+2022-10-29 00:03:53,807 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+2022-10-29 00:03:53,810 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO  * Restarting with stat
+2022-10-29 00:03:57,118 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 WARNING  * Debugger is active!
+2022-10-29 00:03:57,141 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO  * Debugger PIN: 114-466-439
+2022-10-29 00:03:58,845 EMPAPP00001 W:\employee_app\env\lib\site-packages\flask_cors\core.py core.py core serialize_options 362 WARNING Unknown option passed to Flask-CORS: origin
+2022-10-29 00:03:58,846 EMPAPP00001 W:\employee_app\env\lib\site-packages\flask_cors\core.py core.py core serialize_options 362 WARNING Unknown option passed to Flask-CORS: headers
+2022-10-29 00:03:58,847 EMPAPP00001 W:\employee_app\app\main\controller\login_controller.py login_controller.py login_controller post 50 ERROR Profile_check() missing 1 required positional argument: 'jwt_key'
+2022-10-29 00:03:58,959 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO 127.0.0.1 - - [29/Oct/2022 00:03:58] "[35m[1mPOST /login/add_user?Email=skth%40fmnaul.com&Password=123&Name=st HTTP/1.1[0m" 500 -
+2022-10-29 00:04:53,211 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+2022-10-29 00:04:53,211 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO  * Restarting with stat
+2022-10-29 00:04:57,763 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 WARNING  * Debugger is active!
+2022-10-29 00:04:57,779 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO  * Debugger PIN: 114-466-439
+2022-10-29 00:05:04,390 EMPAPP00001 W:\employee_app\env\lib\site-packages\flask_cors\core.py core.py core serialize_options 362 WARNING Unknown option passed to Flask-CORS: origin
+2022-10-29 00:05:04,391 EMPAPP00001 W:\employee_app\env\lib\site-packages\flask_cors\core.py core.py core serialize_options 362 WARNING Unknown option passed to Flask-CORS: headers
+2022-10-29 00:06:58,247 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+2022-10-29 00:06:58,247 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO  * Restarting with stat
+2022-10-29 00:07:02,812 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 WARNING  * Debugger is active!
+2022-10-29 00:07:02,828 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO  * Debugger PIN: 114-466-439
+2022-10-29 00:07:04,453 EMPAPP00001 W:\employee_app\env\lib\site-packages\flask_cors\core.py core.py core serialize_options 362 WARNING Unknown option passed to Flask-CORS: origin
+2022-10-29 00:07:04,455 EMPAPP00001 W:\employee_app\env\lib\site-packages\flask_cors\core.py core.py core serialize_options 362 WARNING Unknown option passed to Flask-CORS: headers
+2022-10-29 00:11:00,380 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+2022-10-29 00:11:00,380 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO  * Restarting with stat
+2022-10-29 00:11:04,885 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 WARNING  * Debugger is active!
+2022-10-29 00:11:04,900 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO  * Debugger PIN: 114-466-439
+2022-10-29 00:11:07,195 EMPAPP00001 W:\employee_app\env\lib\site-packages\flask_cors\core.py core.py core serialize_options 362 WARNING Unknown option passed to Flask-CORS: origin
+2022-10-29 00:11:07,210 EMPAPP00001 W:\employee_app\env\lib\site-packages\flask_cors\core.py core.py core serialize_options 362 WARNING Unknown option passed to Flask-CORS: headers
+2022-10-29 00:13:47,158 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+2022-10-29 00:13:47,162 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO  * Restarting with stat
+2022-10-29 00:13:49,817 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 WARNING  * Debugger is active!
+2022-10-29 00:13:49,829 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO  * Debugger PIN: 114-466-439
+2022-10-29 00:13:52,625 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO 127.0.0.1 - - [29/Oct/2022 00:13:52] "GET / HTTP/1.1" 200 -
+2022-10-29 00:13:52,681 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO 127.0.0.1 - - [29/Oct/2022 00:13:52] "[36mGET /swaggerui/droid-sans.css HTTP/1.1[0m" 304 -
+2022-10-29 00:13:52,689 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO 127.0.0.1 - - [29/Oct/2022 00:13:52] "[36mGET /swaggerui/swagger-ui.css HTTP/1.1[0m" 304 -
+2022-10-29 00:13:52,692 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO 127.0.0.1 - - [29/Oct/2022 00:13:52] "[36mGET /swaggerui/swagger-ui-bundle.js HTTP/1.1[0m" 304 -
+2022-10-29 00:13:52,697 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO 127.0.0.1 - - [29/Oct/2022 00:13:52] "[36mGET /swaggerui/swagger-ui-standalone-preset.js HTTP/1.1[0m" 304 -
+2022-10-29 00:13:53,660 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO 127.0.0.1 - - [29/Oct/2022 00:13:53] "GET /swagger.json HTTP/1.1" 200 -
+2022-10-29 00:13:53,663 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO 127.0.0.1 - - [29/Oct/2022 00:13:53] "[36mGET /swaggerui/favicon-32x32.png HTTP/1.1[0m" 304 -
+2022-10-29 00:13:57,590 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO 127.0.0.1 - - [29/Oct/2022 00:13:57] "GET /Employee/fetchallperson HTTP/1.1" 200 -
+2022-10-29 11:25:24,240 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+2022-10-29 11:25:24,244 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO  * Restarting with stat
+2022-10-29 11:25:28,538 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 WARNING  * Debugger is active!
+2022-10-29 11:25:28,711 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO  * Debugger PIN: 114-466-439
+2022-10-29 11:25:35,633 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO 127.0.0.1 - - [29/Oct/2022 11:25:35] "GET / HTTP/1.1" 200 -
+2022-10-29 11:25:35,706 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO 127.0.0.1 - - [29/Oct/2022 11:25:35] "[36mGET /swaggerui/droid-sans.css HTTP/1.1[0m" 304 -
+2022-10-29 11:25:35,721 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO 127.0.0.1 - - [29/Oct/2022 11:25:35] "[36mGET /swaggerui/swagger-ui.css HTTP/1.1[0m" 304 -
+2022-10-29 11:25:35,723 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO 127.0.0.1 - - [29/Oct/2022 11:25:35] "[36mGET /swaggerui/swagger-ui-bundle.js HTTP/1.1[0m" 304 -
+2022-10-29 11:25:35,725 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO 127.0.0.1 - - [29/Oct/2022 11:25:35] "[36mGET /swaggerui/swagger-ui-standalone-preset.js HTTP/1.1[0m" 304 -
+2022-10-29 11:25:36,710 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO 127.0.0.1 - - [29/Oct/2022 11:25:36] "GET /swagger.json HTTP/1.1" 200 -
+2022-10-29 11:25:46,222 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO 127.0.0.1 - - [29/Oct/2022 11:25:46] "GET /Employee/fetchallperson HTTP/1.1" 200 -
+2022-10-29 11:26:12,336 EMPAPP00001 W:\employee_app\env\lib\site-packages\flask_cors\core.py core.py core serialize_options 362 WARNING Unknown option passed to Flask-CORS: origin
+2022-10-29 11:26:12,336 EMPAPP00001 W:\employee_app\env\lib\site-packages\flask_cors\core.py core.py core serialize_options 362 WARNING Unknown option passed to Flask-CORS: headers
+2022-10-29 11:26:12,368 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO 127.0.0.1 - - [29/Oct/2022 11:26:12] "POST /login/add_user?Email=st%40gmail.com&Password=123456&Name=St HTTP/1.1" 200 -
+2022-10-29 11:26:33,497 EMPAPP00001 W:\employee_app\env\lib\site-packages\flask_cors\core.py core.py core serialize_options 362 WARNING Unknown option passed to Flask-CORS: origin
+2022-10-29 11:26:33,497 EMPAPP00001 W:\employee_app\env\lib\site-packages\flask_cors\core.py core.py core serialize_options 362 WARNING Unknown option passed to Flask-CORS: headers
+2022-10-29 11:26:33,532 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO 127.0.0.1 - - [29/Oct/2022 11:26:33] "POST /login/login?Email=st%40gmail.com&Password=123456 HTTP/1.1" 200 -
+2022-10-29 11:39:02,494 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO 127.0.0.1 - - [29/Oct/2022 11:39:02] "GET /Employee/fetchallperson HTTP/1.1" 200 -
+2022-10-29 11:39:29,080 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO 127.0.0.1 - - [29/Oct/2022 11:39:29] "GET /Employee/fetchallperson HTTP/1.1" 200 -
+2022-10-29 11:39:42,213 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO 127.0.0.1 - - [29/Oct/2022 11:39:42] "GET /Employee/showbyemployeeid?employee_id=2 HTTP/1.1" 200 -
+2022-10-29 11:39:58,648 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO 127.0.0.1 - - [29/Oct/2022 11:39:58] "GET /Employee/searchemployee?name=st HTTP/1.1" 200 -
+2022-10-29 11:48:25,577 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO 127.0.0.1 - - [29/Oct/2022 11:48:25] "GET / HTTP/1.1" 200 -
+2022-10-29 11:48:25,645 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO 127.0.0.1 - - [29/Oct/2022 11:48:25] "[36mGET /swaggerui/droid-sans.css HTTP/1.1[0m" 304 -
+2022-10-29 11:48:25,655 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO 127.0.0.1 - - [29/Oct/2022 11:48:25] "[36mGET /swaggerui/swagger-ui.css HTTP/1.1[0m" 304 -
+2022-10-29 11:48:25,663 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO 127.0.0.1 - - [29/Oct/2022 11:48:25] "[36mGET /swaggerui/swagger-ui-bundle.js HTTP/1.1[0m" 304 -
+2022-10-29 11:48:25,670 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO 127.0.0.1 - - [29/Oct/2022 11:48:25] "[36mGET /swaggerui/swagger-ui-standalone-preset.js HTTP/1.1[0m" 304 -
+2022-10-29 11:48:27,299 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO 127.0.0.1 - - [29/Oct/2022 11:48:27] "GET /swagger.json HTTP/1.1" 200 -
+2022-10-29 11:51:30,853 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+2022-10-29 11:51:30,860 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO  * Restarting with stat
+2022-10-29 11:51:35,849 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 WARNING  * Debugger is active!
+2022-10-29 11:51:35,867 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO  * Debugger PIN: 114-466-439
+2022-10-29 13:19:48,939 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+2022-10-29 13:19:48,944 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO  * Restarting with stat
+2022-10-29 13:19:54,905 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 WARNING  * Debugger is active!
+2022-10-29 13:19:54,925 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO  * Debugger PIN: 114-466-439
+2022-10-29 13:19:55,325 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO 127.0.0.1 - - [29/Oct/2022 13:19:55] "GET / HTTP/1.1" 200 -
+2022-10-29 13:19:55,435 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO 127.0.0.1 - - [29/Oct/2022 13:19:55] "[36mGET /swaggerui/droid-sans.css HTTP/1.1[0m" 304 -
+2022-10-29 13:19:55,450 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO 127.0.0.1 - - [29/Oct/2022 13:19:55] "[36mGET /swaggerui/swagger-ui.css HTTP/1.1[0m" 304 -
+2022-10-29 13:19:55,454 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO 127.0.0.1 - - [29/Oct/2022 13:19:55] "[36mGET /swaggerui/swagger-ui-bundle.js HTTP/1.1[0m" 304 -
+2022-10-29 13:19:55,460 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO 127.0.0.1 - - [29/Oct/2022 13:19:55] "[36mGET /swaggerui/swagger-ui-standalone-preset.js HTTP/1.1[0m" 304 -
+2022-10-29 13:19:56,142 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO 127.0.0.1 - - [29/Oct/2022 13:19:56] "GET /swagger.json HTTP/1.1" 200 -
+2022-10-29 13:20:00,909 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO 127.0.0.1 - - [29/Oct/2022 13:20:00] "GET /Employee/fetchallperson HTTP/1.1" 200 -
+2022-10-29 13:21:16,294 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+2022-10-29 13:21:16,300 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO  * Restarting with stat
+2022-10-29 13:21:21,232 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 WARNING  * Debugger is active!
+2022-10-29 13:21:21,293 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO  * Debugger PIN: 114-466-439
+2022-10-29 13:38:12,515 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+2022-10-29 13:38:12,521 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO  * Restarting with stat
+2022-10-29 13:38:19,978 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 WARNING  * Debugger is active!
+2022-10-29 13:38:19,997 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO  * Debugger PIN: 114-466-439
+2022-10-29 13:39:35,967 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+2022-10-29 13:39:35,974 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO  * Restarting with stat
+2022-10-29 13:39:41,211 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 WARNING  * Debugger is active!
+2022-10-29 13:39:41,260 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO  * Debugger PIN: 114-466-439
+2022-10-29 13:49:46,313 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+2022-10-29 13:49:46,319 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO  * Restarting with stat
+2022-10-29 13:49:52,886 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 WARNING  * Debugger is active!
+2022-10-29 13:49:52,905 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO  * Debugger PIN: 114-466-439
+2022-10-29 14:21:05,185 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO  * Detected change in 'W:\\employee_app\\app\\main\\util\\utilities.py', reloading
+2022-10-29 14:21:05,590 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO  * Restarting with stat
+2022-10-29 14:21:55,737 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+2022-10-29 14:21:55,743 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO  * Restarting with stat
+2022-10-29 14:22:00,999 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 WARNING  * Debugger is active!
+2022-10-29 14:22:01,032 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO  * Debugger PIN: 114-466-439
+2022-10-29 14:26:07,694 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO  * Detected change in 'W:\\employee_app\\app\\main\\util\\utilities.py', reloading
+2022-10-29 14:26:08,062 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO  * Restarting with stat
+2022-10-29 14:26:15,319 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 WARNING  * Debugger is active!
+2022-10-29 14:26:15,338 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO  * Debugger PIN: 114-466-439
+2022-10-29 14:27:07,158 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+2022-10-29 14:27:07,164 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO  * Restarting with stat
+2022-10-29 14:27:12,945 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 WARNING  * Debugger is active!
+2022-10-29 14:27:12,966 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO  * Debugger PIN: 114-466-439
+2022-10-29 14:38:50,955 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+2022-10-29 14:38:50,962 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO  * Restarting with stat
+2022-10-29 14:38:55,890 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 WARNING  * Debugger is active!
+2022-10-29 14:38:55,908 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO  * Debugger PIN: 114-466-439
+2022-10-29 15:13:07,696 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+2022-10-29 15:13:07,699 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO  * Restarting with stat
+2022-10-29 15:13:11,244 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 WARNING  * Debugger is active!
+2022-10-29 15:13:11,267 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO  * Debugger PIN: 114-466-439
+2022-10-29 15:13:15,507 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO 127.0.0.1 - - [29/Oct/2022 15:13:15] "GET /Employee/searchemployee?name=st HTTP/1.1" 200 -
+2022-10-29 15:14:15,674 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+2022-10-29 15:14:15,677 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO  * Restarting with stat
+2022-10-29 15:14:18,596 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 WARNING  * Debugger is active!
+2022-10-29 15:14:18,618 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO  * Debugger PIN: 114-466-439
+2022-10-29 15:14:21,123 EMPAPP00001 W:\employee_app\app\main\controller\employee_controller.py employee_controller.py employee_controller get 396 ERROR argument of type 'NoneType' is not iterable
+2022-10-29 15:14:21,125 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO 127.0.0.1 - - [29/Oct/2022 15:14:21] "GET /Employee/searchemployee?name=st HTTP/1.1" 200 -
+2022-10-29 15:15:50,543 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+2022-10-29 15:15:50,546 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO  * Restarting with stat
+2022-10-29 15:15:53,576 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 WARNING  * Debugger is active!
+2022-10-29 15:15:53,586 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO  * Debugger PIN: 114-466-439
+2022-10-29 15:15:55,709 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO 127.0.0.1 - - [29/Oct/2022 15:15:55] "GET /Employee/searchemployee?name=st HTTP/1.1" 200 -
+2022-10-29 15:36:46,522 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+2022-10-29 15:36:46,526 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO  * Restarting with stat
+2022-10-29 15:36:49,535 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 WARNING  * Debugger is active!
+2022-10-29 15:36:49,551 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO  * Debugger PIN: 114-466-439
+2022-10-29 15:36:52,880 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO 127.0.0.1 - - [29/Oct/2022 15:36:52] "GET /Employee/searchemployee?name=st HTTP/1.1" 200 -
+2022-10-29 15:37:25,458 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO 127.0.0.1 - - [29/Oct/2022 15:37:25] "GET /Employee/searchemployee?name=aadii HTTP/1.1" 200 -
+2022-10-29 15:37:39,216 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO 127.0.0.1 - - [29/Oct/2022 15:37:39] "GET /Employee/searchemployee?name=Aadii HTTP/1.1" 200 -
+2022-10-29 15:38:06,185 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+2022-10-29 15:38:06,188 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO  * Restarting with stat
+2022-10-29 15:38:08,911 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 WARNING  * Debugger is active!
+2022-10-29 15:38:08,922 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO  * Debugger PIN: 114-466-439
+2022-10-29 15:38:13,879 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO 127.0.0.1 - - [29/Oct/2022 15:38:13] "GET /Employee/searchemployee?name=Aadii HTTP/1.1" 200 -
+2022-10-29 15:38:14,783 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO  * Detected change in 'W:\\employee_app\\app\\main\\controller\\employee_controller.py', reloading
+2022-10-29 15:38:15,056 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO  * Restarting with stat
+2022-10-29 15:38:17,765 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 WARNING  * Debugger is active!
+2022-10-29 15:38:17,778 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO  * Debugger PIN: 114-466-439
+2022-10-29 15:39:01,266 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+2022-10-29 15:39:01,269 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO  * Restarting with stat
+2022-10-29 15:39:03,972 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 WARNING  * Debugger is active!
+2022-10-29 15:39:03,984 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO  * Debugger PIN: 114-466-439
+2022-10-29 15:39:05,682 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO 127.0.0.1 - - [29/Oct/2022 15:39:05] "GET /Employee/searchemployee?name=Aadii HTTP/1.1" 200 -
+2022-10-29 15:39:10,652 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO 127.0.0.1 - - [29/Oct/2022 15:39:10] "GET /Employee/searchemployee?name=Aadii HTTP/1.1" 200 -
+2022-10-29 15:39:56,509 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO 127.0.0.1 - - [29/Oct/2022 15:39:56] "GET /Employee/searchemployee?name=aadii HTTP/1.1" 200 -
+2022-10-29 15:40:35,007 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+2022-10-29 15:40:35,013 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO  * Restarting with stat
+2022-10-29 15:40:41,213 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 WARNING  * Debugger is active!
+2022-10-29 15:40:41,232 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO  * Debugger PIN: 114-466-439
+2022-10-29 15:41:45,090 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+2022-10-29 15:41:45,090 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO  * Restarting with stat
+2022-10-29 15:41:49,503 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 WARNING  * Debugger is active!
+2022-10-29 15:41:49,518 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO  * Debugger PIN: 114-466-439
+2022-10-29 15:44:25,141 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+2022-10-29 15:44:25,141 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO  * Restarting with stat
+2022-10-29 15:44:30,511 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 WARNING  * Debugger is active!
+2022-10-29 15:44:30,527 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO  * Debugger PIN: 114-466-439
+2022-10-29 15:44:52,044 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO  * Detected change in 'W:\\employee_app\\app\\main\\util\\utilities.py', reloading
+2022-10-29 15:44:52,302 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO  * Restarting with stat
+2022-10-29 15:44:57,082 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 WARNING  * Debugger is active!
+2022-10-29 15:44:57,097 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO  * Debugger PIN: 114-466-439
+2022-10-29 15:45:06,922 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+2022-10-29 15:45:06,922 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO  * Restarting with stat
+2022-10-29 15:45:11,566 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 WARNING  * Debugger is active!
+2022-10-29 15:45:11,597 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO  * Debugger PIN: 114-466-439
+2022-10-29 15:46:31,734 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO  * Detected change in 'W:\\employee_app\\app\\main\\database\\employee_orm.py', reloading
+2022-10-29 15:46:32,232 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO  * Restarting with stat
+2022-10-29 15:46:40,303 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+2022-10-29 15:46:40,318 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO  * Restarting with stat
+2022-10-29 15:46:44,834 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 WARNING  * Debugger is active!
+2022-10-29 15:46:44,850 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO  * Debugger PIN: 114-466-439
+2022-10-29 17:05:26,264 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+2022-10-29 17:05:26,268 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO  * Restarting with stat
+2022-10-29 17:05:30,376 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 WARNING  * Debugger is active!
+2022-10-29 17:05:30,395 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO  * Debugger PIN: 114-466-439
+2022-10-29 17:05:30,750 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO 127.0.0.1 - - [29/Oct/2022 17:05:30] "GET /Employee/searchemployee?name=aadii HTTP/1.1" 200 -
+2022-10-29 17:05:41,910 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO 127.0.0.1 - - [29/Oct/2022 17:05:41] "GET /Employee/searchemployee?name=aadi HTTP/1.1" 200 -
+2022-10-29 17:06:29,928 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+2022-10-29 17:06:29,931 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO  * Restarting with stat
+2022-10-29 17:06:33,076 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 WARNING  * Debugger is active!
+2022-10-29 17:06:33,093 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO  * Debugger PIN: 114-466-439
+2022-10-29 17:06:36,336 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO 127.0.0.1 - - [29/Oct/2022 17:06:36] "GET /Employee/searchemployee?name=aadi HTTP/1.1" 200 -
+2022-10-29 17:07:35,822 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO 127.0.0.1 - - [29/Oct/2022 17:07:35] "GET /Employee/searchemployee?name=aadii HTTP/1.1" 200 -
+2022-10-29 17:07:40,971 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO 127.0.0.1 - - [29/Oct/2022 17:07:40] "GET /Employee/searchemployee?name=aad HTTP/1.1" 200 -
+2022-10-29 17:07:46,118 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO 127.0.0.1 - - [29/Oct/2022 17:07:46] "GET /Employee/searchemployee?name=st HTTP/1.1" 200 -
+2022-10-29 17:07:54,050 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO 127.0.0.1 - - [29/Oct/2022 17:07:54] "GET /Employee/searchemployee?name=emp4 HTTP/1.1" 200 -
+2022-10-29 17:08:01,032 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO 127.0.0.1 - - [29/Oct/2022 17:08:01] "GET /Employee/searchemployee?name=emp41 HTTP/1.1" 200 -
+2022-10-29 17:08:36,418 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO 127.0.0.1 - - [29/Oct/2022 17:08:36] "GET /Employee/searchemployee?name=emp41 HTTP/1.1" 200 -
+2022-10-29 17:08:39,415 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO 127.0.0.1 - - [29/Oct/2022 17:08:39] "GET /Employee/searchemployee?name=emp4 HTTP/1.1" 200 -
+2022-10-29 17:08:46,073 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO 127.0.0.1 - - [29/Oct/2022 17:08:46] "GET /Employee/searchemployee?name=emp1 HTTP/1.1" 200 -
+2022-10-29 17:09:00,341 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO 127.0.0.1 - - [29/Oct/2022 17:09:00] "GET /Employee/searchemployee?name=emp3 HTTP/1.1" 200 -
+2022-10-29 17:09:18,898 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO 127.0.0.1 - - [29/Oct/2022 17:09:18] "GET /Employee/searchemployee?id=2&name=emp3 HTTP/1.1" 200 -
+2022-10-29 17:09:53,218 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+2022-10-29 17:09:53,234 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO  * Restarting with stat
+2022-10-29 17:09:59,096 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 WARNING  * Debugger is active!
+2022-10-29 17:09:59,127 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO  * Debugger PIN: 114-466-439
+2022-10-29 17:10:20,555 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+2022-10-29 17:10:20,558 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO  * Restarting with stat
+2022-10-29 17:10:24,222 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 WARNING  * Debugger is active!
+2022-10-29 17:10:24,236 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO  * Debugger PIN: 114-466-439
+2022-10-29 17:10:24,365 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO 127.0.0.1 - - [29/Oct/2022 17:10:24] "GET /Employee/searchemployee?id=2 HTTP/1.1" 200 -
+2022-10-29 17:10:54,787 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+2022-10-29 17:10:54,790 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO  * Restarting with stat
+2022-10-29 17:10:57,556 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 WARNING  * Debugger is active!
+2022-10-29 17:10:57,566 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO  * Debugger PIN: 114-466-439
+2022-10-29 17:11:03,605 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO 127.0.0.1 - - [29/Oct/2022 17:11:03] "GET / HTTP/1.1" 200 -
+2022-10-29 17:11:03,683 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO 127.0.0.1 - - [29/Oct/2022 17:11:03] "[36mGET /swaggerui/droid-sans.css HTTP/1.1[0m" 304 -
+2022-10-29 17:11:03,689 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO 127.0.0.1 - - [29/Oct/2022 17:11:03] "[36mGET /swaggerui/swagger-ui.css HTTP/1.1[0m" 304 -
+2022-10-29 17:11:03,696 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO 127.0.0.1 - - [29/Oct/2022 17:11:03] "[36mGET /swaggerui/swagger-ui-bundle.js HTTP/1.1[0m" 304 -
+2022-10-29 17:11:03,701 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO 127.0.0.1 - - [29/Oct/2022 17:11:03] "[36mGET /swaggerui/swagger-ui-standalone-preset.js HTTP/1.1[0m" 304 -
+2022-10-29 17:11:04,666 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO 127.0.0.1 - - [29/Oct/2022 17:11:04] "GET /swagger.json HTTP/1.1" 200 -
+2022-10-29 17:11:04,693 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO 127.0.0.1 - - [29/Oct/2022 17:11:04] "[36mGET /swaggerui/favicon-32x32.png HTTP/1.1[0m" 304 -
+2022-10-29 17:11:48,792 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+2022-10-29 17:11:48,795 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO  * Restarting with stat
+2022-10-29 17:11:52,389 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 WARNING  * Debugger is active!
+2022-10-29 17:11:52,402 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO  * Debugger PIN: 114-466-439
+2022-10-29 17:11:52,556 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO 127.0.0.1 - - [29/Oct/2022 17:11:52] "GET / HTTP/1.1" 200 -
+2022-10-29 17:11:52,568 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO 127.0.0.1 - - [29/Oct/2022 17:11:52] "GET / HTTP/1.1" 200 -
+2022-10-29 17:11:52,627 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO 127.0.0.1 - - [29/Oct/2022 17:11:52] "[36mGET /swaggerui/droid-sans.css HTTP/1.1[0m" 304 -
+2022-10-29 17:11:52,632 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO 127.0.0.1 - - [29/Oct/2022 17:11:52] "[36mGET /swaggerui/swagger-ui.css HTTP/1.1[0m" 304 -
+2022-10-29 17:11:52,638 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO 127.0.0.1 - - [29/Oct/2022 17:11:52] "[36mGET /swaggerui/swagger-ui-bundle.js HTTP/1.1[0m" 304 -
+2022-10-29 17:11:52,643 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO 127.0.0.1 - - [29/Oct/2022 17:11:52] "[36mGET /swaggerui/swagger-ui-standalone-preset.js HTTP/1.1[0m" 304 -
+2022-10-29 17:11:52,996 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO 127.0.0.1 - - [29/Oct/2022 17:11:52] "GET /swagger.json HTTP/1.1" 200 -
+2022-10-29 17:11:53,000 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO 127.0.0.1 - - [29/Oct/2022 17:11:53] "[36mGET /swaggerui/favicon-32x32.png HTTP/1.1[0m" 304 -
+2022-10-29 17:12:25,832 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO 127.0.0.1 - - [29/Oct/2022 17:12:25] "GET / HTTP/1.1" 200 -
+2022-10-29 17:12:25,888 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO 127.0.0.1 - - [29/Oct/2022 17:12:25] "[36mGET /swaggerui/droid-sans.css HTTP/1.1[0m" 304 -
+2022-10-29 17:12:25,899 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO 127.0.0.1 - - [29/Oct/2022 17:12:25] "[36mGET /swaggerui/swagger-ui.css HTTP/1.1[0m" 304 -
+2022-10-29 17:12:25,908 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO 127.0.0.1 - - [29/Oct/2022 17:12:25] "[36mGET /swaggerui/swagger-ui-bundle.js HTTP/1.1[0m" 304 -
+2022-10-29 17:12:25,917 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO 127.0.0.1 - - [29/Oct/2022 17:12:25] "[36mGET /swaggerui/swagger-ui-standalone-preset.js HTTP/1.1[0m" 304 -
+2022-10-29 17:12:26,177 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO 127.0.0.1 - - [29/Oct/2022 17:12:26] "GET /swagger.json HTTP/1.1" 200 -
+2022-10-29 17:12:26,185 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO 127.0.0.1 - - [29/Oct/2022 17:12:26] "[36mGET /swaggerui/favicon-32x32.png HTTP/1.1[0m" 304 -
