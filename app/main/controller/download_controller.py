@@ -1,13 +1,13 @@
 import logging
 import os
 import traceback
-
-from flask import request, send_file, abort
 from flask_restx import Resource
-from service.constan_service import ConstantService
-from werkzeug.datastructures import FileStorage
-
 from ..util.dto import DownloadDto
+from flask import request, send_file, abort, jsonify, session
+from werkzeug.datastructures import FileStorage
+from service.constan_service import ConstantService
+from ..service.login_service import login_required
+
 
 api = DownloadDto.api
 upload_parser = api.parser()
@@ -20,6 +20,14 @@ class RawDownloadController(Resource):
         'output_file_name': {'description': 'download_data file name with (.csv)', 'in': 'query', 'type': 'str'}})
     def get(self):
         try:
+            login_result = login_required()
+            if not login_result:
+                response = {
+                    "status": False,
+                    "code": 111,
+                    "message": "Login required",
+                }
+                return jsonify(response)
             output_file_name = request.args.get('output_file_name')
             out_file_path = os.path.join(ConstantService.data_out_path(), output_file_name)
             if os.path.exists(out_file_path):

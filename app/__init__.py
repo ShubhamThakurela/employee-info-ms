@@ -1,11 +1,12 @@
+import logging
+import os
 from flask import Blueprint
 from flask_restx import Api
+from .main.constant import paths
+from logging.handlers import RotatingFileHandler
+from .main.controller.login_controller import api as login
 from .main.controller.download_controller import api as download
 from .main.controller.employee_controller import api as employee
-from .main.constant import paths
-import logging
-from logging.handlers import RotatingFileHandler
-import os
 
 logging.basicConfig(
     handlers=[
@@ -33,3 +34,4 @@ api = Api(blueprint,
 
 api.add_namespace(employee, path='/Employee')
 api.add_namespace(download, path='/Download')
+api.add_namespace(login, path='/login')

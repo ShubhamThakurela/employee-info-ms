@@ -9,3 +9,8 @@ class EmployeeDto:
 class DownloadDto:
     api = Namespace('Download', description='User Interface for download data')
     raw = api.model('Download', {})
+
+
+class LoginDto:
+    api = Namespace('Login', description='User Login')
+    raw = api.model('login', {})

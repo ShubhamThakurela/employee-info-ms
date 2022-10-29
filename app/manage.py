@@ -35,6 +35,5 @@ def test():
 
 
 if __name__ == '__main__':
-    print("Server_running", constant.paths.SERVER_HOST)
     manager.run()
 
