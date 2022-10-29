@@ -1,4 +1,4 @@
-from database.login_orm import login_orm
+from ..database.login_orm import login_orm
 from flask import session
 
 

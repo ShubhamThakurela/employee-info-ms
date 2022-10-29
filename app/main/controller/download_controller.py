@@ -5,7 +5,7 @@ from flask_restx import Resource
 from ..util.dto import DownloadDto
 from flask import request, send_file, abort, jsonify, session
 from werkzeug.datastructures import FileStorage
-from service.constan_service import ConstantService
+from ..service.constan_service import ConstantService
 from ..service.login_service import login_required
 
 

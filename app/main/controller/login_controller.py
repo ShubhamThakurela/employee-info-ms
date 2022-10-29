@@ -1,6 +1,6 @@
 import logging
 import traceback
-from database.login_orm import login_orm
+from ..database.login_orm import login_orm
 from ..util.dto import LoginDto
 from flask_restx import Resource
 from flask_cors import cross_origin
