@@ -7,9 +7,9 @@ from datetime import datetime
 from flask import jsonify
 from flask import request
 from flask_restx import Resource
-from service.constan_service import ConstantService
+from ..service.constan_service import ConstantService
 from werkzeug.datastructures import FileStorage
-from service.login_service import login_required
+from ..service.login_service import login_required
 from ..service.employee_service import personservice
 from ..service.mailer_service import MailUtilities
 from ..util.dto import EmployeeDto
