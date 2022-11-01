@@ -32,15 +32,7 @@ class Utilities:
     def validate_person_input(data):
         string_values = ["skills"]
         alpha_values = ["name", "employee role", "designation"]
-        # int_values = ["id"]
         for key, value in data.items():
-            # todo commentout below validation id is autoincrement
-            # if key in int_values:
-            #     if value is None or not str(value).isdigit() or str(value).startswith(" ") or str(value) == "":
-            #         msg = str(key) + " should not be empty and should be of integer type"
-            #         return False, msg
-            # elif key in contact_values:
-            #     pass  # todo add below validation when contact is mandatory again
             if key in string_values:
                 if value is None or value.startswith(" ") or value == "":
                     msg = str(key) + " should not be empty or None"
@@ -49,12 +41,6 @@ class Utilities:
                 if value is None or value.startswith(" ") or value == "":
                     msg = str(key) + " should not be empty or None"
                     return False, msg
-                # else:
-                #     value_list = value.split("")
-                #     for val in value_list:
-                #         if not val.isalpha():
-                #             msg = str(key) + " should only contain alphabets, not numbers or special characters"
-                #             return False, msg
             else:
                 continue
         return True, ""
@@ -69,7 +55,6 @@ class Utilities:
 
     @staticmethod
     def create_update_set_from_dict(query_dict):
-        # del query_dict['id']
         update_set = " set "
         for key, value in query_dict.items():
             update_set = update_set + str(key) + "=\"" + str(value) + "\", "

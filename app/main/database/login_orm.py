@@ -1,8 +1,11 @@
 import logging
 import traceback
-from ..database import connector
-from flask import session
+
 import jwt
+from flask import session
+from datetime import datetime
+
+from ..database import connector
 
 
 class login_orm(object):
@@ -10,10 +13,10 @@ class login_orm(object):
         pass
 
     @staticmethod
-    def login(username, password):
+    def login(username, password, User_access):
         db = connector.db_connection()
         cmd = db.cursor()
-        cmd.execute('SELECT * FROM employee_data.login WHERE email_id = %s AND password = %s', (username, password,))
+        cmd.execute('SELECT * FROM employee_data.login WHERE email_id = %s AND password = %s AND access = %s', (username, password, User_access,))
         account = cmd.fetchone()
         db.commit()
         db.close()
@@ -21,6 +24,7 @@ class login_orm(object):
             session['loggedin'] = True
             session['id'] = account[0]
             session['username'] = account[1]
+            session['role'] = account[6]
             return True
         else:
             return False
@@ -38,12 +42,10 @@ class login_orm(object):
         if 'loggedin' in session:
             cmd.execute('SELECT * FROM employee_data.login WHERE id = %s', (session['id'],))
             account = cmd.fetchone()
-
             res = {
-                "id": account[0],
-                "email": account[1],
-                "name": account[3],
-                "status": account[5]
+                "Email": account[1],
+                "Name": account[3],
+                "Status": account[5]
             }
             encoded_jwt_token = jwt.encode(res, jwt_key, algorithm="HS256")
 
@@ -61,13 +63,15 @@ class login_orm(object):
             a = '''INSERT  INTO employee_data.login( 
                 email_id,  
                 password,
-                name
+                name,
+                access
                 )
-                VALUES('{0}','{1}','{2}')'''.format(
+                VALUES('{0}','{1}','{2}','{3}')'''.format(
                 data.get("email_id"),
                 data.get("password"),
-                data.get("name")
-                )
+                data.get("name"),
+                data.get("access")
+            )
             cmd.execute(a)
             db.commit()
             db.close()
@@ -75,4 +79,63 @@ class login_orm(object):
         except Exception as e:
             print(str(traceback.format_exc()))
             logging.error(str(e))
+            return str(e)
 
+    @staticmethod
+    def get_record_by_id(s):
+        try:
+            db = connector.db_connection()
+            cmd = db.cursor()
+            a = "SELECT * FROM employee_data.login where email_id={}".format(s)
+            cmd.execute(a)
+            data = cmd.fetchall()
+            # print(data)
+            db.commit()
+            db.close()
+            return data
+        except Exception as e:
+            print(str(traceback.format_exc()))
+            logging.error(str(e))
+
+    @staticmethod
+    def update_user(update_set, user_mail):
+        try:
+            db = connector.db_connection()
+            cmd = db.cursor()
+            dt = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+            a_q = "UPDATE employee_data.login " + update_set + ''', dt="%s" where email_id="%s"''' % (
+                dt, user_mail)
+            cmd.execute(a_q)
+            db.commit()
+            s = '"' + user_mail + '"'
+            a = "SELECT * FROM employee_data.login where email_id={}".format(s)
+            cmd.execute(a)
+            data = cmd.fetchall()
+            db.close()
+            return data
+        except Exception as e:
+            print(str(traceback.format_exc()))
+            logging.error(str(e))
+            return str(e)
+
+    @staticmethod
+    def deleteUser(emp_id):
+        try:
+            db = connector.db_connection()
+            cmd = db.cursor()
+            s = '"' + emp_id + '"'
+            q = "select * from employee_data.login where email_id={}".format(s)
+            cmd.execute(q)
+            data = cmd.fetchall()
+            if data:
+                a = "DELETE FROM employee_data.login WHERE email_id={}".format(s)
+                cmd.execute(a)
+                db.commit()
+                db.close()
+                return True
+            else:
+                return "Email id Not Matched!"
+        except Exception as e:
+            print(str(traceback.format_exc()))
+            logging.error(str(e))
+            return str(e)

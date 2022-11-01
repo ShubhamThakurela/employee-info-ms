@@ -4,13 +4,15 @@ import shutil
 import time
 import traceback
 from datetime import datetime
+
 from flask import jsonify
 from flask import request
 from flask_restx import Resource
-from ..service.constan_service import ConstantService
 from werkzeug.datastructures import FileStorage
-from ..service.login_service import login_required
+
+from ..service.constan_service import ConstantService
 from ..service.employee_service import personservice
+from ..service.login_service import login_required
 from ..service.mailer_service import MailUtilities
 from ..util.dto import EmployeeDto
 from ..util.utilities import Utilities
@@ -29,43 +31,43 @@ class delete_record(Resource):
             login_result = login_required()
             if not login_result:
                 response = {
-                    "status": False,
-                    "code": 111,
-                    "message": "Login required",
+                    "Status": False,
+                    "Code": 111,
+                    "Message": "Login required",
                 }
                 return jsonify(response)
             emp_id = request.args.get("employee_id")
             if emp_id != None and emp_id.isdigit():
                 result = personservice.delete_record(emp_id)
-                if result == None:
+                if result is True:
                     response = {
-                        "status": True,
-                        "message": "Deleted Successfully",
-                        "code": 204
+                        "Status": True,
+                        "Message": "Deleted Successfully",
+                        "Code": 204
                     }
                     return jsonify(response)
                 else:
                     response = {
-                        "status": False,
-                        "message": "Please Enter a Valid Entity",
-                        "code": 404
+                        "Status": False,
+                        "Message": "Please Enter a Valid Entity",
+                        "Code": 404
                     }
                     return jsonify(response)
             else:
                 response = {
-                    "status": False,
-                    "message": "Please Enter a integer value only",
-                    "code": 404
+                    "Status": False,
+                    "Message": "Please Enter a integer value only",
+                    "Code": 404
                 }
                 return jsonify(response)
         except Exception as e:
             print(str(traceback.format_exc()))
             logging.error(str(e))
             response = {
-                "status": False,
-                "message": "Sorry an error occurred",
-                "error": str(e),
-                "code": 500,
+                "Status": False,
+                "Message": "Sorry an error occurred",
+                "Error": str(e),
+                "Code": 500,
             }
             return jsonify(response)
 
@@ -87,9 +89,9 @@ class download_employee_data(Resource):
             login_result = login_required()
             if not login_result:
                 response = {
-                    "status": False,
-                    "code": 111,
-                    "message": "Login required",
+                    "Status": False,
+                    "Code": 111,
+                    "Message": "Login required",
                 }
                 return jsonify(response)
             """"file store_path"""
@@ -105,26 +107,34 @@ class download_employee_data(Resource):
                 mail_status = MailUtilities.send_success_notification(email_id, download_link, dt_start)
                 if mail_status == "Email has been sent":
                     return {
-                        "status": True,
+                        "Status": True,
                         "Message": "Your Employees data crawler Successfully Fetched",
                         "Processed_Time": '{:.3f} sec'.format(end_time - start_time),
-                        "download_link": "http://" + ConstantService.server_host() + "/Download/download_data_file?output_file_name=" + data_file,
-                        "Mail_sent": email_id,
-                        "mail_status": mail_status
-
+                        "Download_link": "http://" + ConstantService.server_host() + "/Download/download_data_file?output_file_name=" + data_file,
+                        "Mail_sent_id": email_id,
+                        "Mail_status": mail_status
                     }
-            return {
-                "status": True,
-                "Message": "Your Employees data crawler Successfully Fetched",
-                "Processed_Time": '{:.3f} sec'.format(end_time - start_time),
-                "download_link": "http://" + ConstantService.server_host() + "/Download/download_data_file?output_file_name=" + data_file,
-                "Mail_sent": email_id
-            }
+            else:
+                return {
+                    "Status": True,
+                    "Message": "Your Employees data crawler Successfully Fetched",
+                    "Processed_Time": '{:.3f} sec'.format(end_time - start_time),
+                    "Download_link": "http://" + ConstantService.server_host() + "/Download/download_data_file?output_file_name=" + data_file,
+                    "Mail_sent_id": email_id,
+                    "Mail_status": "Not Sent, Due to Blank email_id"
+                }
         except Exception as e:
             print(str(e))
             logging.error(str(e))
             if email_id is not None:
                 MailUtilities.send_failed_notification(email_id, str(e), dt_start)
+            response = {
+                "Status": False,
+                "Message": "Sorry an error occurred",
+                "Error": str(e),
+                "Code": 500,
+            }
+            return jsonify(response)
 
 
 @api.route('/fetchallperson')
@@ -134,33 +144,34 @@ class GetAllPerson(Resource):
             login_result = login_required()
             if not login_result:
                 response = {
-                    "status": False,
-                    "code": 111,
-                    "message": "Login required",
+                    "Status": False,
+                    "Code": 111,
+                    "Message": "Login required",
                 }
                 return jsonify(response)
             result = personservice.get_person()
             if result:
-                response = {"status": True,
-                            "message": "successfully fetch the record",
-                            "code": 200,
-                            "result": result
-                            }
+                response = {
+                    "Code": 200,
+                    "Message": "successfully fetch the record",
+                    "Result": result,
+                    "Status": True
+                }
                 return jsonify(response)
             else:
-                response = {"status": False,
-                            "message": "No data in database",
-                            "code": 404,
+                response = {"Status": False,
+                            "Message": "No data in database",
+                            "Code": 404,
                             }
                 return jsonify(response)
         except Exception as e:
             print(str(traceback.format_exc()))
             logging.error(str(e))
             response = {
-                "status": False,
-                "message": "Sorry an error occurred",
-                "error": str(e),
-                "code": 500,
+                "Status": False,
+                "Message": "Sorry an error occurred",
+                "Error": str(e),
+                "Code": 500,
             }
             return jsonify(response)
 
@@ -173,15 +184,15 @@ class employeeFile(Resource):
     def post(self):
         if 'file' not in request.files:
             return {
-                "status": False,
-                "message": "Sorry! file not passed.",
+                "Status": False,
+                "Message": "Sorry! file not passed.",
             }
         file = request.files['file']
         # If the user does not select a file, the browser submits an
         if file.filename == '':
             return {
-                "status": False,
-                "message": "Sorry! file not passed.",
+                "Status": False,
+                "Message": "Sorry! file not passed.",
             }
         email_id = None
         if 'email_id' in request.args:
@@ -197,46 +208,53 @@ class employeeFile(Resource):
             login_result = login_required()
             if not login_result:
                 response = {
-                    "status": False,
-                    "code": 111,
-                    "message": "Login required",
+                    "Status": False,
+                    "Code": 111,
+                    "Message": "Login required",
                 }
                 return jsonify(response)
             now = datetime.now()
             dt_start = now.strftime("%d/%m/%Y %H:%M:%S")
             start_time = time.time()
             status = personservice.insert_file(file_path)
-            # Move file to processed after completed the process
+# Move file to processed after completed the process
             if not os.path.exists(os.path.dirname(ConstantService.data_processed_path())):
                 os.makedirs(os.path.dirname(ConstantService.data_processed_path()))
             shutil.move(file_path, os.path.join(ConstantService.data_processed_path(), os.path.basename(file_path)))
-
             end_time = time.time()
             insertfile = file.filename
             if email_id is not None:
                 mail_status = MailUtilities.send_success_noti(email_id, dt_start, insertfile)
                 if mail_status == "Email has been sent":
                     return {
-                        "status": True,
-                        "result": status,
-                        "message": "Congratulations! Your file data successfully inserted.",
+                        "Status": True,
+                        "Result": status,
+                        "Message": "Congratulations! Your file data successfully inserted.",
                         "Processing Time": '{:.3f} sec'.format(end_time - start_time),
-                        "mail_sent": email_id,
-                        "mail_status": mail_status,
-                        "file": file.filename
+                        "Mail_sent_id": email_id,
+                        "Mail_status": mail_status,
+                        "File": file.filename
                     }
-
-            return {
-                "status": True,
-                "result": status,
-                "message": "Congratulations! Your file data successfully inserted.",
-                "Processing Time": '{:.3f} sec'.format(end_time - start_time),
-                "mail_sent": email_id,
-                "file": file.filename
-            }
+            else:
+                return {
+                    "Status": True,
+                    "Result": status,
+                    "Message": "Congratulations! Your file data successfully inserted.",
+                    "Processing Time": '{:.3f} sec'.format(end_time - start_time),
+                    "Mail_sent_id": email_id,
+                    "Mail_status": "Not Sent, Due to Blank email_id",
+                    "File": file.filename
+                        }
         except Exception as e:
             print(str(e))
             logging.error(str(e))
+            response = {
+                "Status": False,
+                "Message": "Sorry an error occurred",
+                "Error": str(e),
+                "Code": 500,
+            }
+            return jsonify(response)
 
 
 @api.route('/insert_employee')
@@ -244,7 +262,6 @@ class insert_person(Resource):
     @staticmethod
     def validate_person(id):
         result = personservice.get_person()
-        print(result)
         for i in result:
             if i['id'] == id:
                 return False
@@ -261,9 +278,9 @@ class insert_person(Resource):
             login_result = login_required()
             if not login_result:
                 response = {
-                    "status": False,
-                    "code": 111,
-                    "message": "Login required",
+                    "Status": False,
+                    "Code": 111,
+                    "Message": "Login required",
                 }
                 return jsonify(response)
             data = {
@@ -285,41 +302,41 @@ class insert_person(Resource):
                     person_id = person_id[0]["id"]
                     if result == None:
                         response = {
-                            "status": False,
-                            "message": "unsuccessful to insert",
-                            "code": 404,
+                            "Status": False,
+                            "Message": "unsuccessful to insert",
+                            "Code": 404,
                         }
                         return jsonify(response)
                     else:
                         response = {
-                            "status": True,
-                            "message": "successfully insert the record",
-                            "employee_id": person_id,
-                            "code": 200,
+                            "Status": True,
+                            "Message": "successfully insert the record",
+                            "Employee_id": person_id,
+                            "Code": 200,
                         }
                         return jsonify(response)
                 else:
                     response = {
-                        "status": False,
-                        "message": " already exist!!",
-                        "code": 404,
+                        "Status": False,
+                        "Message": " already exist!!",
+                        "Code": 404,
                     }
                     return jsonify(response)
             else:
                 response = {
-                    "status": False,
-                    "message": msg,
-                    "code": 404,
+                    "Status": False,
+                    "Message": msg,
+                    "Code": 404,
                 }
                 return jsonify(response)
         except Exception as e:
             print(str(traceback.format_exc()))
             logging.error(str(e))
             response = {
-                "status": False,
-                "message": "Sorry an error occurred",
-                "error": str(e),
-                "code": 500,
+                "Status": False,
+                "Message": "Sorry an error occurred",
+                "Error": str(e),
+                "Code": 500,
             }
             return jsonify(response)
 
@@ -332,9 +349,9 @@ class search(Resource):
             login_result = login_required()
             if not login_result:
                 response = {
-                    "status": False,
-                    "code": 111,
-                    "message": "Login required",
+                    "Status": False,
+                    "Code": 111,
+                    "Message": "Login required",
                 }
                 return jsonify(response)
             data = {}
@@ -351,28 +368,28 @@ class search(Resource):
                 if 'id' in query_dict:
                     if result:
                         response = {
-                            "status": True,
-                            "message": "successfully fetch the record",
+                            "Status": True,
+                            "Message": "successfully fetch the record",
                             "Employee_id": data["id"],
-                            "code": 200,
-                            "result": result
+                            "Code": 200,
+                            "Result": result
                         }
                         return jsonify(response)
                     else:
-                        response = {"status": False,
-                                    "message": "Data not found",
-                                    "code": 404,
+                        response = {"Status": False,
+                                    "Message": "Data not found",
+                                    "Code": 404,
                                     }
 
                     return jsonify(response)
 
                 if 'name' in query_dict and result is not None:
                     response = {
-                        "status": True,
-                        "message": "successfully fetch the record",
+                        "Status": True,
+                        "Message": "successfully fetch the record",
                         "Employee_name": data["name"],
-                        "code": 200,
-                        "result": result
+                        "Code": 200,
+                        "Result": result
                     }
                     return jsonify(response)
                 else:
@@ -385,19 +402,19 @@ class search(Resource):
 
                     return jsonify(response)
             else:
-                response = {"status": False,
-                            "message": "Please Enter at-least one entity to search",
-                            "code": 404,
+                response = {"Status": False,
+                            "Message": "Please Enter at-least one entity to search",
+                            "Code": 404,
                             }
                 return jsonify(response)
         except Exception as e:
             print(str(traceback.format_exc()))
             logging.error(str(e))
             response = {
-                "status": False,
-                "message": "Sorry an error occurred",
-                "error": str(e),
-                "code": 500,
+                "Status": False,
+                "Message": "Sorry an error occurred",
+                "Error": str(e),
+                "Code": 500,
             }
             return jsonify(response)
 
@@ -412,42 +429,42 @@ class GetPersonByID(Resource):
             login_result = login_required()
             if not login_result:
                 response = {
-                    "status": False,
-                    "code": 111,
-                    "message": "Login required",
+                    "Status": False,
+                    "Code": 111,
+                    "Message": "Login required",
                 }
                 return jsonify(response)
             person_id = request.args.get('employee_id')
             if person_id is not None and person_id.isdigit():
                 result = personservice.get_record_by_person_id(person_id)
                 if result:
-                    response = {"status": True,
-                                "message": "successfully fetch the record",
-                                "code": 200,
-                                "result": result
+                    response = {"Status": True,
+                                "Message": "successfully fetch the record",
+                                "Code": 200,
+                                "Result": result
                                 }
                     return jsonify(response)
                 else:
-                    response = {"status": False,
-                                "message": "Entity does not Exists. Please enter valid Id",
-                                "code": 404,
+                    response = {"Status": False,
+                                "Message": "Entity does not Exists. Please enter valid Id",
+                                "Code": 404,
                                 }
                     return jsonify(response)
             else:
                 response = {
-                    "status": False,
-                    "message": "Please Enter a valid person id",
-                    "code": 404
+                    "Status": False,
+                    "Message": "Please Enter a valid person id",
+                    "Code": 404
                 }
                 return jsonify(response)
         except Exception as e:
             print(str(traceback.format_exc()))
             logging.error(str(e))
             response = {
-                "status": False,
-                "message": "Sorry an error occurred",
-                "error": str(e),
-                "code": 500,
+                "Status": False,
+                "Message": "Sorry an error occurred",
+                "Error": str(e),
+                "Code": 500,
             }
             return jsonify(response)
 
@@ -463,9 +480,9 @@ class updateRecord(Resource):
             login_result = login_required()
             if not login_result:
                 response = {
-                    "status": False,
-                    "code": 111,
-                    "message": "Login required",
+                    "Status": False,
+                    "Code": 111,
+                    "Message": "Login required",
                 }
                 return jsonify(response)
             data = {
@@ -477,13 +494,12 @@ class updateRecord(Resource):
                 'employer': request.args.get('employer'),
                 'skills': request.args.get('skills'),
             }
-            print(data)
             emp_id = data.get("id")
             if emp_id == emp_id is None:
                 response = {
-                    "status": False,
-                    "message": "employee_id should not be empty or None",
-                    "code": 404,
+                    "Status": False,
+                    "Message": "employee_id should not be empty or None",
+                    "Code": 404,
                 }
                 return jsonify(response)
             dict_len, update_dict = Utilities.validate_update_input(data)
@@ -497,48 +513,48 @@ class updateRecord(Resource):
                         result = personservice.updateRecord(update_set, emp_id)
                         if result == None:
                             response = {
-                                "status": False,
-                                "message": "Not able to update",
-                                "code": 404
+                                "Status": False,
+                                "Message": "Not able to update",
+                                "Code": 404
                             }
                             return jsonify(response)
                         else:
                             response = {
-                                "status": True,
-                                "message": "Updated Successfully",
-                                "updated data to employee_id": emp_id,
-                                "code": 201
+                                "Status": True,
+                                "Message": "Updated Successfully",
+                                "Updated data to employee_id": emp_id,
+                                "Code": 201
                             }
                             return jsonify(response)
                     else:
                         response = {
-                            "status": False,
-                            "message": "emp_id does not exist in employee table",
-                            "code": 404
+                            "Status": False,
+                            "Message": "emp_id does not exist in employee table",
+                            "Code": 404
                         }
                         return jsonify(response)
                 else:
                     response = {
-                        "status": False,
-                        "message": msg,
-                        "code": 404,
+                        "Status": False,
+                        "Message": msg,
+                        "Code": 404,
                     }
                     return jsonify(response)
             else:
                 response = {
-                    "status": False,
-                    "message": "Atleast one field along with emp_id is required",
-                    "code": 404
+                    "Status": False,
+                    "Message": "Atleast one field along with emp_id is required",
+                    "Code": 404
                 }
                 return jsonify(response)
         except Exception as e:
             print(str(traceback.format_exc()))
             logging.error(str(e))
             response = {
-                "status": False,
-                "message": "Sorry an error occurred",
-                "error": str(e),
-                "code": 500,
+                "Status": False,
+                "Message": "Sorry an error occurred",
+                "Error": str(e),
+                "Code": 500,
             }
             return jsonify(response)
 
@@ -549,4 +565,4 @@ def fileext_validation(file_path):
     if file_type in ['.xls', '.xlsx']:
         return True
     else:
-        return "Unsupported file extension " + file_type + "! Supporting only (.xls, .xlsx)."
+        return "Unsupported file extension " + file_type + "! System Supporting only (.xls, .xlsx)."

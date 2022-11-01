@@ -1,6 +1,7 @@
 import logging
 import traceback
 from datetime import datetime
+
 from ..database import connector
 
 
@@ -121,8 +122,6 @@ class person_orm(object):
         dt = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
         a = "UPDATE employee_data.employees " + update_set + ''', dt="%s" where id=%s''' % (
             dt, emp_id)
-
-        # print("query-", a)
         cmd.execute(a)
         db.commit()
         db.close()
@@ -140,7 +139,7 @@ class person_orm(object):
             cmd.execute(a)
             db.commit()
             db.close()
-            return None
+            return True
         else:
             return "Please Enter a valid Entity"
 
