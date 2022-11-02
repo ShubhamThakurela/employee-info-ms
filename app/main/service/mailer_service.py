@@ -4,6 +4,7 @@ import smtplib
 import time
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
+
 from .constan_service import ConstantService
 
 
@@ -56,7 +57,6 @@ class MailUtilities(object):
 
         sent_mail = MailUtilities.sendHtmlMail(to, cc, subject, body)
         if sent_mail is True:
-
             return "Email has been sent"
 
     @staticmethod
@@ -79,12 +79,13 @@ class MailUtilities(object):
                             <td>End Date/Time : {dtt}</td>
                          </tr>
                          <tr>
-                            <td style="padding-bottom:10px;"><br>Error Log: {download_link}</td>
+                            <td style="padding-bottom:10px;"><br>Error Log: {error_log}</td>
                          </tr>
 
 
                     </table>
                         <br><br><br><br><br><br><br>
+                        
         				Regards,
                         <br><span style="color:#0073A5"> Employee Ms</span>
                         <br><span style="color:#0073A5">(Employee Ms-Platform)</span>
@@ -92,20 +93,15 @@ class MailUtilities(object):
         '''
         now = datetime.datetime.now()
         dt_string = now.strftime("%d/%m/%Y %H:%M:%S")
-
         # head_message = "Xignite {type} process has been started."
         head_message = " Execution failed."
-
         status = "Failed"
-
         to = emails
         cc = ConstantService.cc_mail_id()
         subject = "  Execution failed - Failed"
-
         head_message.format(type="Quarterly")
         body = raw_body.format(head_message=head_message, status=status,
                                dt=start_dt, dtt=dt_string, download_link=error_log)
-
         MailUtilities.sendHtmlMail(to, cc, subject, body)
 
     @staticmethod
@@ -241,5 +237,4 @@ class MailUtilities(object):
                                dt=dt_start, dtt=dt_string)
         sent_mail = MailUtilities.sendHtmlMail(to, cc, subject, body)
         if sent_mail is True:
-
             return "Email has been sent"

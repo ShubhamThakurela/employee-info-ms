@@ -1,8 +1,10 @@
+import logging
 import os
 import traceback
+
 import pandas as pd
 import xlrd
-import logging
+
 from ..database.employee_orm import person_orm
 from ..util.utilities import Utilities
 

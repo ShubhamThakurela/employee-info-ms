@@ -1,13 +1,14 @@
 import logging
 import os
 import traceback
+
+from flask import request, send_file, abort, jsonify
 from flask_restx import Resource
-from ..util.dto import DownloadDto
-from flask import request, send_file, abort, jsonify, session
 from werkzeug.datastructures import FileStorage
+
 from ..service.constan_service import ConstantService
 from ..service.login_service import login_required
-
+from ..util.dto import DownloadDto
 
 api = DownloadDto.api
 upload_parser = api.parser()
@@ -23,9 +24,9 @@ class RawDownloadController(Resource):
             login_result = login_required()
             if not login_result:
                 response = {
-                    "status": False,
-                    "code": 111,
-                    "message": "Login required",
+                    "Status": False,
+                    "Code": 111,
+                    "Message": "Login required",
                 }
                 return jsonify(response)
             output_file_name = request.args.get('output_file_name')
@@ -36,4 +37,6 @@ class RawDownloadController(Resource):
         except Exception as e:
             print(str(traceback.format_exc()))
             logging.error(str(e))
+
+            return str(e)
 

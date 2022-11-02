@@ -1,12 +1,14 @@
 import logging
 import os
+from logging.handlers import RotatingFileHandler
+
 from flask import Blueprint
 from flask_restx import Api
+
 from .main.constant import paths
-from logging.handlers import RotatingFileHandler
-from .main.controller.login_controller import api as login
 from .main.controller.download_controller import api as download
 from .main.controller.employee_controller import api as employee
+from .main.controller.login_controller import api as login
 
 logging.basicConfig(
     handlers=[
