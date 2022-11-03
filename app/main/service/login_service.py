@@ -11,8 +11,28 @@ class loginService(object):
         pass
 
     @staticmethod
-    def login_check(username, password, User_access):
-        status = login_orm.login(username, password, User_access)
+    def get_user():
+        try:
+            data = login_orm.getall_users()
+            result = []
+            for i in data:
+                result.append({
+                            'Id': i[0],
+                            'Email_id': i[1],
+                            'Password': i[2],
+                            'Name': i[3],
+                            'Dt': str(i[4]),
+                            'Status': i[5],
+                            'Access': i[6],
+                                })
+            return result
+        except Exception as e:
+            print(str(traceback.format_exc()))
+            logging.error(str(e))
+
+    @staticmethod
+    def login_check(username, password):
+        status = login_orm.login(username, password)
         return status
 
     @staticmethod
