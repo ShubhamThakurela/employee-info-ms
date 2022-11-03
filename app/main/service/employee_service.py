@@ -23,14 +23,14 @@ class personservice(object):
         result = []
         for i in data:
             result.append({
-                'id': i[0],
-                'name': i[1],
-                'designation': i[2],
-                'salary': i[3],
-                'job_location': i[4],
-                'employer': i[5],
-                'skills': i[6],
-                'dt': str(i[7])
+                'Id': i[0],
+                'Name': i[1],
+                'Designation': i[2],
+                'Salary': i[3],
+                'Job_location': i[4],
+                'Employer': i[5],
+                'Skills': i[6],
+                'Dt': str(i[7])
             })
         return result
 

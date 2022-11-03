@@ -43,7 +43,8 @@ class delete_record(Resource):
                     response = {
                         "Status": True,
                         "Message": "Deleted Successfully",
-                        "Code": 204
+                        "Code": 204,
+                        "Deleted Person_id is": emp_id
                     }
                     return jsonify(response)
                 else:
@@ -270,9 +271,9 @@ class insert_person(Resource):
         return True
 
     @api.doc(params={
-        'name': 'employer_name', 'designation': 'employer role', 'salary': 'salary',
-        'job_location': 'job_location', 'employer': 'company_name',
-        'skills': 'employee_skills'})
+        'name': 'Pesron_name', 'designation': 'Employer role', 'salary': 'Salary',
+        'job_location': 'Job_Location', 'employer': 'Company_name',
+        'skills': 'Employee_skills'})
     def post(self):
         try:
             login_result = login_required()
@@ -291,7 +292,6 @@ class insert_person(Resource):
                 'employer': request.args.get('employer'),
                 'skills': request.args.get('skills'),
             }
-            # data = request.get_json()
             valid_input, msg = Utilities.validate_person_input(data)
             if valid_input:
                 emp_id = data.get("id")
@@ -355,7 +355,7 @@ class search(Resource):
                 }
                 return jsonify(response)
             data = {}
-            data["id"] = request.args.get('id')
+            data["id"] = request.args.get('Person_id')
             data["name"] = request.args.get('name')
             dict_len = 0
             query_dict = {}
@@ -419,60 +419,60 @@ class search(Resource):
             return jsonify(response)
 
 
-@api.route('/showbyemployeeid')
-class GetPersonByID(Resource):
-    @api.doc(params={
-        'employee_id': 'employee_id'
-    })
-    def get(self):
-        try:
-            login_result = login_required()
-            if not login_result:
-                response = {
-                    "Status": False,
-                    "Code": 111,
-                    "Message": "Login required",
-                }
-                return jsonify(response)
-            person_id = request.args.get('employee_id')
-            if person_id is not None and person_id.isdigit():
-                result = personservice.get_record_by_person_id(person_id)
-                if result:
-                    response = {"Status": True,
-                                "Message": "successfully fetch the record",
-                                "Code": 200,
-                                "Result": result
-                                }
-                    return jsonify(response)
-                else:
-                    response = {"Status": False,
-                                "Message": "Entity does not Exists. Please enter valid Id",
-                                "Code": 404,
-                                }
-                    return jsonify(response)
-            else:
-                response = {
-                    "Status": False,
-                    "Message": "Please Enter a valid person id",
-                    "Code": 404
-                }
-                return jsonify(response)
-        except Exception as e:
-            print(str(traceback.format_exc()))
-            logging.error(str(e))
-            response = {
-                "Status": False,
-                "Message": "Sorry an error occurred",
-                "Error": str(e),
-                "Code": 500,
-            }
-            return jsonify(response)
+# @api.route('/showbyemployeeid')
+# class GetPersonByID(Resource):
+#     @api.doc(params={
+#         'employee_id': 'employee_id'
+#     })
+#     def get(self):
+#         try:
+#             login_result = login_required()
+#             if not login_result:
+#                 response = {
+#                     "Status": False,
+#                     "Code": 111,
+#                     "Message": "Login required",
+#                 }
+#                 return jsonify(response)
+#             person_id = request.args.get('employee_id')
+#             if person_id is not None and person_id.isdigit():
+#                 result = personservice.get_record_by_person_id(person_id)
+#                 if result:
+#                     response = {"Status": True,
+#                                 "Message": "successfully fetch the record",
+#                                 "Code": 200,
+#                                 "Result": result
+#                                 }
+#                     return jsonify(response)
+#                 else:
+#                     response = {"Status": False,
+#                                 "Message": "Entity does not Exists. Please enter valid Id",
+#                                 "Code": 404,
+#                                 }
+#                     return jsonify(response)
+#             else:
+#                 response = {
+#                     "Status": False,
+#                     "Message": "Please Enter a valid person id",
+#                     "Code": 404
+#                 }
+#                 return jsonify(response)
+#         except Exception as e:
+#             print(str(traceback.format_exc()))
+#             logging.error(str(e))
+#             response = {
+#                 "Status": False,
+#                 "Message": "Sorry an error occurred",
+#                 "Error": str(e),
+#                 "Code": 500,
+#             }
+#             return jsonify(response)
 
 
 @api.route('/update_employee')
 class updateRecord(Resource):
     @api.doc(params={
-        'id': 'emplyee_id', 'name': 'employer_name', 'designation': 'employer role', 'salary': 'salary',
+        'id': 'emplyee_id', 'designation': 'employer role', 'salary': 'salary',
         'job_location': 'job_location', 'employer': 'company_name',
         'skills': 'employee_skills'})
     def put(self):
@@ -487,7 +487,6 @@ class updateRecord(Resource):
                 return jsonify(response)
             data = {
                 "id": request.args.get('id'),
-                "name": request.args.get('name'),
                 'designation': request.args.get('designation'),
                 'salary': request.args.get('salary'),
                 'Job_location': request.args.get('job_location'),

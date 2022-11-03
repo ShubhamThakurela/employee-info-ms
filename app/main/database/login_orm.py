@@ -13,10 +13,11 @@ class login_orm(object):
         pass
 
     @staticmethod
-    def login(username, password, User_access):
+    def login(username, password):
         db = connector.db_connection()
         cmd = db.cursor()
-        cmd.execute('SELECT * FROM employee_data.login WHERE email_id = %s AND password = %s AND access = %s', (username, password, User_access,))
+        cmd.execute('SELECT * FROM employee_data.login WHERE email_id = %s AND password = %s',
+                    (username, password))
         account = cmd.fetchone()
         db.commit()
         db.close()
@@ -139,3 +140,15 @@ class login_orm(object):
             print(str(traceback.format_exc()))
             logging.error(str(e))
             return str(e)
+
+    @staticmethod
+    def getall_users():
+        db = connector.db_connection()
+        cmd = db.cursor()
+        a = "select * from employee_data.login"
+        cmd.execute(a)
+        data = cmd.fetchall()
+        db.commit()
+        db.close()
+
+        return data

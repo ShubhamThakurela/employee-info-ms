@@ -29,21 +29,26 @@ class Utilities:
             return ""
 
     @staticmethod
-    def validate_person_input(data):
-        string_values = ["skills"]
-        alpha_values = ["name", "employee role", "designation"]
-        for key, value in data.items():
-            if key in string_values:
+    def validate_person_input(update_dict):
+        string_values = ["skills", "salary"]
+        int_values = ["id"]
+        alpha_values = ["name", "employee role", "designation", "Job_location", "employer"]
+        for key, value in update_dict.items():
+            if key == int_values:
+                if value is None or not str(value).isdigit() or str(value).startswith(" ") or str(value) == "":
+                    msg = str(key) + " should not be empty and should be of integer type only"
+                    return False, msg
+            elif key == string_values:
                 if value is None or value.startswith(" ") or value == "":
                     msg = str(key) + " should not be empty or None"
                     return False, msg
-            if key in alpha_values:
+            elif key == alpha_values:
                 if value is None or value.startswith(" ") or value == "":
                     msg = str(key) + " should not be empty or None"
                     return False, msg
-            else:
-                continue
-        return True, ""
+            continue
+
+        return True, " "
 
     @staticmethod
     def is_int_or_float(value):
