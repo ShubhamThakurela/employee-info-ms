@@ -134,12 +134,12 @@ class personservice(object):
             data = xlrd.open_workbook(file_paths)
             sheet = data.sheet_by_name("Sheet1")
             status = person_orm.insert_file(sheet)
-
             return status
         except Exception as e:
             print(str(e))
             print(str(traceback.format_exc()))
             logging.error(str(e))
+            return "Sheet Name Incorrect"
 
     @staticmethod
     def fetch_complete_data():
