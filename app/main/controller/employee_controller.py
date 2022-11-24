@@ -236,6 +236,16 @@ class employeeFile(Resource):
                         "Mail_status": mail_status,
                         "File": file.filename
                     }
+            if "Sheet Name Incorrect" in status:
+                return {
+                    "Status": True,
+                    "Result": status,
+                    "Message": "An Error Occurred",
+                    "Processing Time": '{:.3f} sec'.format(end_time - start_time),
+                    "Mail_sent_id": email_id,
+                    "Mail_status": "Not Sent, Due to Blank email_id",
+                    "File": file.filename
+                        }
             else:
                 return {
                     "Status": True,

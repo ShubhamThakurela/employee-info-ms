@@ -1818,3 +1818,74 @@
 2022-11-03 18:27:04,942 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 WARNING  * Debugger is active!
 2022-11-03 18:27:04,954 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO  * Debugger PIN: 114-466-439
 2022-11-03 18:27:07,738 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO 127.0.0.1 - - [03/Nov/2022 18:27:07] "GET /login/get_all_user HTTP/1.1" 200 -
+2022-11-03 21:10:49,117 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+2022-11-03 21:10:49,121 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO  * Restarting with stat
+2022-11-03 21:10:51,971 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 WARNING  * Debugger is active!
+2022-11-03 21:10:51,992 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO  * Debugger PIN: 114-466-439
+2022-11-24 20:58:47,100 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+2022-11-24 20:58:47,100 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO  * Restarting with stat
+2022-11-24 20:58:55,431 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 WARNING  * Debugger is active!
+2022-11-24 20:58:55,455 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO  * Debugger PIN: 114-466-439
+2022-11-24 20:58:55,795 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO 127.0.0.1 - - [24/Nov/2022 20:58:55] "GET / HTTP/1.1" 200 -
+2022-11-24 20:58:55,802 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO 127.0.0.1 - - [24/Nov/2022 20:58:55] "GET / HTTP/1.1" 200 -
+2022-11-24 20:58:55,887 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO 127.0.0.1 - - [24/Nov/2022 20:58:55] "GET /swaggerui/droid-sans.css HTTP/1.1" 200 -
+2022-11-24 20:58:56,221 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO 127.0.0.1 - - [24/Nov/2022 20:58:56] "GET /swaggerui/swagger-ui.css HTTP/1.1" 200 -
+2022-11-24 20:58:56,563 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO 127.0.0.1 - - [24/Nov/2022 20:58:56] "GET /swaggerui/swagger-ui-bundle.js HTTP/1.1" 200 -
+2022-11-24 20:58:56,906 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO 127.0.0.1 - - [24/Nov/2022 20:58:56] "GET /swaggerui/swagger-ui-standalone-preset.js HTTP/1.1" 200 -
+2022-11-24 20:58:58,341 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO 127.0.0.1 - - [24/Nov/2022 20:58:58] "GET /swagger.json HTTP/1.1" 200 -
+2022-11-24 20:58:58,420 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO 127.0.0.1 - - [24/Nov/2022 20:58:58] "GET /swaggerui/favicon-32x32.png HTTP/1.1" 200 -
+2022-11-24 20:59:04,892 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO 127.0.0.1 - - [24/Nov/2022 20:59:04] "GET /Employee/fetchallperson HTTP/1.1" 200 -
+2022-11-24 21:01:22,852 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO 127.0.0.1 - - [24/Nov/2022 21:01:22] "GET /login/get_all_user HTTP/1.1" 200 -
+2022-11-24 21:01:50,321 EMPAPP00001 W:\employee_app\env\lib\site-packages\flask_cors\core.py core.py core serialize_options 362 WARNING Unknown option passed to Flask-CORS: origin
+2022-11-24 21:01:50,321 EMPAPP00001 W:\employee_app\env\lib\site-packages\flask_cors\core.py core.py core serialize_options 362 WARNING Unknown option passed to Flask-CORS: headers
+2022-11-24 21:01:50,399 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO 127.0.0.1 - - [24/Nov/2022 21:01:50] "POST /login/login?Email=subham.thakurela%40gmail.com&Password=Subham%4012 HTTP/1.1" 200 -
+2022-11-24 21:02:05,577 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO 127.0.0.1 - - [24/Nov/2022 21:02:05] "GET /login/get_all_user HTTP/1.1" 200 -
+2022-11-24 21:02:31,537 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO 127.0.0.1 - - [24/Nov/2022 21:02:31] "GET /Employee/fetchallperson HTTP/1.1" 200 -
+2022-11-24 21:02:59,510 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO 127.0.0.1 - - [24/Nov/2022 21:02:59] "[36mGET /swaggerui/droid-sans.css HTTP/1.1[0m" 304 -
+2022-11-24 21:02:59,522 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO 127.0.0.1 - - [24/Nov/2022 21:02:59] "[36mGET /swaggerui/swagger-ui.css HTTP/1.1[0m" 304 -
+2022-11-24 21:02:59,803 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO 127.0.0.1 - - [24/Nov/2022 21:02:59] "GET /swaggerui/swagger-ui-bundle.js.map HTTP/1.1" 200 -
+2022-11-24 21:02:59,850 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO 127.0.0.1 - - [24/Nov/2022 21:02:59] "GET /swaggerui/swagger-ui-standalone-preset.js.map HTTP/1.1" 200 -
+2022-11-24 21:02:59,867 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO 127.0.0.1 - - [24/Nov/2022 21:02:59] "GET /swaggerui/swagger-ui.css.map HTTP/1.1" 200 -
+2022-11-24 21:03:11,403 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO 127.0.0.1 - - [24/Nov/2022 21:03:11] "POST /Employee/download_Alldata_from_table?email_id=subham.thakurela%40gmaill.com HTTP/1.1" 200 -
+2022-11-24 21:03:27,602 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO 127.0.0.1 - - [24/Nov/2022 21:03:27] "GET /Download/download_data_file?output_file_name=employees_data.csv HTTP/1.1" 200 -
+2022-11-24 21:04:07,467 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO 127.0.0.1 - - [24/Nov/2022 21:04:07] "POST /Employee/insert_by_file HTTP/1.1" 200 -
+2022-11-24 21:04:38,010 EMPAPP00001 W:\employee_app\app\main\service\employee_service.py employee_service.py employee_service insert_file 142 ERROR No sheet named <'Sheet1'>
+2022-11-24 21:04:38,012 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO 127.0.0.1 - - [24/Nov/2022 21:04:38] "POST /Employee/insert_by_file HTTP/1.1" 200 -
+2022-11-24 21:35:34,215 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+2022-11-24 21:35:34,223 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO  * Restarting with stat
+2022-11-24 21:35:39,166 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 WARNING  * Debugger is active!
+2022-11-24 21:35:39,186 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO  * Debugger PIN: 114-466-439
+2022-11-24 21:35:56,386 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO 127.0.0.1 - - [24/Nov/2022 21:35:56] "GET / HTTP/1.1" 200 -
+2022-11-24 21:35:56,671 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO 127.0.0.1 - - [24/Nov/2022 21:35:56] "[36mGET /swaggerui/droid-sans.css HTTP/1.1[0m" 304 -
+2022-11-24 21:35:56,756 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO 127.0.0.1 - - [24/Nov/2022 21:35:56] "[36mGET /swaggerui/swagger-ui.css HTTP/1.1[0m" 304 -
+2022-11-24 21:35:56,769 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO 127.0.0.1 - - [24/Nov/2022 21:35:56] "[36mGET /swaggerui/swagger-ui-bundle.js HTTP/1.1[0m" 304 -
+2022-11-24 21:35:56,772 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO 127.0.0.1 - - [24/Nov/2022 21:35:56] "[36mGET /swaggerui/swagger-ui-standalone-preset.js HTTP/1.1[0m" 304 -
+2022-11-24 21:35:57,672 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO 127.0.0.1 - - [24/Nov/2022 21:35:57] "GET /swagger.json HTTP/1.1" 200 -
+2022-11-24 21:35:57,682 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO 127.0.0.1 - - [24/Nov/2022 21:35:57] "[36mGET /swaggerui/favicon-32x32.png HTTP/1.1[0m" 304 -
+2022-11-24 21:36:05,371 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO 127.0.0.1 - - [24/Nov/2022 21:36:05] "POST /Employee/insert_by_file HTTP/1.1" 200 -
+2022-11-24 21:52:11,974 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO 127.0.0.1 - - [24/Nov/2022 21:52:11] "GET / HTTP/1.1" 200 -
+2022-11-24 21:52:12,020 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO 127.0.0.1 - - [24/Nov/2022 21:52:12] "[36mGET /swaggerui/droid-sans.css HTTP/1.1[0m" 304 -
+2022-11-24 21:52:12,245 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO 127.0.0.1 - - [24/Nov/2022 21:52:12] "[36mGET /swaggerui/swagger-ui.css HTTP/1.1[0m" 304 -
+2022-11-24 21:52:12,335 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO 127.0.0.1 - - [24/Nov/2022 21:52:12] "[36mGET /swaggerui/swagger-ui-bundle.js HTTP/1.1[0m" 304 -
+2022-11-24 21:52:12,337 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO 127.0.0.1 - - [24/Nov/2022 21:52:12] "[36mGET /swaggerui/swagger-ui-standalone-preset.js HTTP/1.1[0m" 304 -
+2022-11-24 21:52:12,839 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO 127.0.0.1 - - [24/Nov/2022 21:52:12] "GET /swagger.json HTTP/1.1" 200 -
+2022-11-24 21:52:12,855 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO 127.0.0.1 - - [24/Nov/2022 21:52:12] "[36mGET /swaggerui/favicon-32x32.png HTTP/1.1[0m" 304 -
+2022-11-24 21:52:19,860 EMPAPP00001 W:\employee_app\app\main\service\employee_service.py employee_service.py employee_service insert_file 141 ERROR No sheet named <'Sheet1'>
+2022-11-24 21:52:20,006 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO 127.0.0.1 - - [24/Nov/2022 21:52:20] "[35m[1mPOST /Employee/insert_by_file HTTP/1.1[0m" 500 -
+2022-11-24 21:54:24,977 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+2022-11-24 21:54:24,977 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO  * Restarting with stat
+2022-11-24 21:54:29,801 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 WARNING  * Debugger is active!
+2022-11-24 21:54:29,817 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO  * Debugger PIN: 114-466-439
+2022-11-24 21:55:00,925 EMPAPP00001 W:\employee_app\app\main\service\employee_service.py employee_service.py employee_service insert_file 141 ERROR No sheet named <'Sheet1'>
+2022-11-24 21:57:02,264 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+2022-11-24 21:57:02,270 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO  * Restarting with stat
+2022-11-24 21:57:09,809 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 WARNING  * Debugger is active!
+2022-11-24 21:57:09,842 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO  * Debugger PIN: 114-466-439
+2022-11-24 21:57:25,694 EMPAPP00001 W:\employee_app\app\main\service\employee_service.py employee_service.py employee_service insert_file 141 ERROR No sheet named <'Sheet1'>
+2022-11-24 21:57:49,060 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO 127.0.0.1 - - [24/Nov/2022 21:57:49] "POST /Employee/insert_by_file HTTP/1.1" 200 -
+2022-11-24 22:12:26,109 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+2022-11-24 22:12:26,113 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO  * Restarting with stat
+2022-11-24 22:12:28,781 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 WARNING  * Debugger is active!
+2022-11-24 22:12:28,794 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO  * Debugger PIN: 114-466-439
+2022-11-24 22:12:35,613 EMPAPP00001 W:\employee_app\app\main\service\employee_service.py employee_service.py employee_service insert_file 141 ERROR No sheet named <'Sheet1'>
+2022-11-24 22:12:35,618 EMPAPP00001 W:\employee_app\env\lib\site-packages\werkzeug\_internal.py _internal.py _internal _log 224 INFO 127.0.0.1 - - [24/Nov/2022 22:12:35] "POST /Employee/insert_by_file HTTP/1.1" 200 -
