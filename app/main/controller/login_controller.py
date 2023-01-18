@@ -1,5 +1,6 @@
 import logging
 import traceback
+from datetime import datetime
 
 from flask import request, jsonify, session
 from flask_cors import cross_origin
@@ -49,7 +50,7 @@ class Login(Resource):
             if adding_user == "insert successfully":
                 return {
                     "Status": 200,
-                    "Message": "User successful Inserted",
+                    "Message": "User successfully added",
                     "Login_id": email,
                     "Name": Name
                 }
@@ -68,40 +69,22 @@ class Login(Resource):
 class AllUser(Resource):
     def get(self):
         try:
-            login_result = login_required()
-            if not login_result:
+            result = loginService.get_user()
+            if result:
                 response = {
-                    "Status": False,
-                    "Code": 111,
-                    "Message": "Login required",
+                    "Code": 200,
+                    "Message": "successfully fetch the record",
+                    "Result": result,
+                    "Status": True
                 }
                 return jsonify(response)
-            if login_result is True:
-                check_profile = loginService.check_access()
-                if check_profile is True:
-                    result = loginService.get_user()
-                    if result:
-                        response = {
-                            "Code": 200,
-                            "Message": "successfully fetch the record",
-                            "Result": result,
-                            "Status": True
-                        }
-                        return jsonify(response)
-                    else:
-                        response = {"Status": False,
-                                    "Message": "No data in database",
-                                    "Code": 404,
-                                    }
-                        return jsonify(response)
-                else:
-                    response = {
-                        "Status": False,
-                        "Message": "Sorry an error occurred",
-                        "Info": check_profile,
-                        "Code": 500,
-                                }
+            else:
+                response = {"Status": False,
+                            "Message": "No data in database",
+                            "Code": 404,
+                            }
                 return jsonify(response)
+
         except Exception as e:
             print(str(traceback.format_exc()))
             logging.error(str(e))
@@ -119,7 +102,7 @@ class Login(Resource):
     @api.doc(params=({'Email': {'description': "User mail_id", 'in': 'query', 'type': 'str'},
                       'Password': {'description': "Password", 'in': 'query', 'type': 'str'},
                       }))
-    @cross_origin(origin='*', headers=['Content-Type', 'Authorization'])
+    @cross_origin()
     def post(self):
         try:
             data = {
@@ -128,13 +111,14 @@ class Login(Resource):
                     }
             username = data.get("username")
             password = data.get("password")
+            Real_login_time = datetime.now()
             status = loginService.login_check(username, password)
             if status:
                 jwt_key = login_obj.get_jwt_key()
                 result, token = loginService.Profile_check(jwt_key)
-
                 response = {
                     "Status": status,
+                    "Login_Time": Real_login_time,
                     "Message": "Logged in successfully",
                     "Result": result,
                     # "token": token
@@ -162,7 +146,7 @@ class Login(Resource):
 
 @api.route('/logout')
 class ShowRecord(Resource):
-    @cross_origin(origin='*', headers=['Content-Type', 'Authorization'])
+    @cross_origin()
     def get(self):
         try:
             session.clear()

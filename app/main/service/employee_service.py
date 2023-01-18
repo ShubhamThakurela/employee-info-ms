@@ -4,6 +4,7 @@ import traceback
 
 import pandas as pd
 import xlrd
+from flask import jsonify
 
 from ..database.employee_orm import person_orm
 from ..util.utilities import Utilities
@@ -139,14 +140,19 @@ class personservice(object):
             print(str(e))
             print(str(traceback.format_exc()))
             logging.error(str(e))
-            return "Sheet Name Incorrect"
+            response = {
+                "Status": False,
+                "Message": "Sorry an error occurred",
+                "Error": str(e),
+                "Code": 500,
+            }
+            return jsonify(response)
 
     @staticmethod
     def fetch_complete_data():
         try:
             data = person_orm.select_person()
             return data
-
         except Exception as e:
             print(str(traceback.format_exc()))
             logging.error(str(e))

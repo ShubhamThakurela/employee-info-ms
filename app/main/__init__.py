@@ -1,4 +1,5 @@
 import os
+from datetime import timedelta
 
 from flask import Flask
 from flask_bcrypt import Bcrypt
@@ -27,6 +28,8 @@ flask_bcrypt = Bcrypt()
 def create_app():
     # create and configure the app
     app = Flask(__name__, instance_relative_config=True)
+    app.secret_key = "secret key"
+    app.config['PERMANENT_SESSION_LIFETIME'] = timedelta(minutes=15)
     app.config['ENV'] = 'development'
     app.config['DEBUG'] = True
     app.config['TESTING'] = True

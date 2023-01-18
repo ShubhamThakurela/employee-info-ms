@@ -178,11 +178,11 @@ class MailUtilities(object):
                         critical_msg="None")'''
         except Exception as e:
             pass
-            '''logger.logg(debug_msg='Error while sending mail.',
+            """logger.logg(debug_msg='Error while sending mail.',
                         info_msg='Mail could not be sent',
                         warning_msg='Error in sending mail',
                         error_msg='Module = ' + "mailer.py",
-                        critical_msg=str(e))'''
+                        critical_msg=str(e))"""
 
         return status
 
