@@ -4,12 +4,10 @@ import shutil
 import time
 import traceback
 from datetime import datetime
-
 from flask import jsonify
 from flask import request
 from flask_restx import Resource
 from werkzeug.datastructures import FileStorage
-
 from ..service.constan_service import ConstantService
 from ..service.employee_service import personservice
 from ..service.login_service import login_required
@@ -25,7 +23,7 @@ upload_parser.add_argument('file', location='files', type=FileStorage)
 @api.route('/delete_employee_by_id')
 class delete_record(Resource):
     @api.doc(
-        params={'employee_id': {'description': 'Employee ID', 'in': 'query', 'type': 'str'}})
+        params={'employee_id': {'description': 'Employee ID', 'in': 'query', 'type': 'Int'}})
     def delete(self):
         try:
             login_result = login_required()
@@ -73,7 +71,7 @@ class delete_record(Resource):
             return jsonify(response)
 
 
-@api.route('/download_Alldata_from_table')
+@api.route('/export_Alldata_from_table')
 class download_employee_data(Resource):
     @api.doc(params={
         'email_id': {'description': 'Specify Email_id', 'in': 'query', 'type': 'string'}
@@ -109,7 +107,7 @@ class download_employee_data(Resource):
                 if mail_status == "Email has been sent":
                     return {
                         "Status": True,
-                        "Message": "Your Employees data crawler Successfully Fetched",
+                        "Message": "Your Employees data crawler Successfully Completed",
                         "Processed_Time": '{:.3f} sec'.format(end_time - start_time),
                         "Download_link": "http://" + ConstantService.server_host() + "/Download/download_data_file?output_file_name=" + data_file,
                         "Mail_sent_id": email_id,
@@ -118,7 +116,7 @@ class download_employee_data(Resource):
             else:
                 return {
                     "Status": True,
-                    "Message": "Your Employees data crawler Successfully Fetched",
+                    "Message": "Your Employees data crawler Successfully Completed",
                     "Processed_Time": '{:.3f} sec'.format(end_time - start_time),
                     "Download_link": "http://" + ConstantService.server_host() + "/Download/download_data_file?output_file_name=" + data_file,
                     "Mail_sent_id": email_id,
@@ -387,7 +385,7 @@ class search(Resource):
                         return jsonify(response)
                     else:
                         response = {"Status": False,
-                                    "Message": "Data not found",
+                                    "Message": "Entity not Matched",
                                     "Code": 404,
                                     }
 
